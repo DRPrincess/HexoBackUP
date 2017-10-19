@@ -390,3 +390,15 @@ hashCode() 也是 Object 类的一个方法。返回一个离散的 int 型整�
 # <font color= "#008000"> 参考资料
 
 Effective Java 中文版第二版
+
+
+
+# <font color= "#008000"> 最后 </font>
+
+刚刚开通了个人微信公众号，最新的博客，好玩的事情，都会在上面分享，欢迎关注 (*^o^*)。
+
+<div  align="center">    
+
+![微信公众号](http://oriwplcze.bkt.clouddn.com/836a36d6a91d859428783f8ea2ce85d7.png)
+
+</div>
