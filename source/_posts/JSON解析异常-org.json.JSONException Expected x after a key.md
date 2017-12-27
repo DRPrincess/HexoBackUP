@@ -1,8 +1,13 @@
 ---
-title: JSON解析异常-org.json.JSONException: Expected a ':' after a key
+title: JSON解析异常- org.json.JSONException Expected x after a key
 date: 2017-11-22 22:46:09
 tags:
 ---
+
+
+破解了一个全角空格引发的血案
+
+<!--more-->
 
 # 问题场景
 
@@ -31,8 +36,6 @@ JSON 转换失败一般有以下两个原因：
 出现了问题，我百思不得其解得时候，我去 GsonFormt 这个插件的 GitHub 上创建一个 issue,把我转换出错的 JSON 字符串附上了，然后提交了上去。为了保险起见，提交之后我验证了一下我的问题描述。于是我复制了 issue 上我提交的那段 JSON 字符串，粘贴转换，发现竟然正常转换了，正常了！！！！ 震惊了我狭窄的认知世界。然而我使用接口文档中的同样的一份JSON,转换仍然失败。
 
 虽然上面发生的事情比较显的我比较蠢，但是至少，可以现在定位问题了。目前有内容看起来一模一样的两份 JSON，一个转换失败，一个转换正常。也是我用 UltraEdit 分别以 Hex 模式打开了两份文本，结果如下：
-
-
 
 正常转换的文本：
 

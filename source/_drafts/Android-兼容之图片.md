@@ -26,3 +26,6 @@ tags:
 |hdpi|480×800	|1.5	|0.75	|0.64
 |xhdpi|720×1280|	2.25	|1.125	|1.042
 |xxhdpi|1080×1920	|3.375	|1.6875	|1.5|
+
+Gradle 地址：
+https://services.gradle.org/distributions/
