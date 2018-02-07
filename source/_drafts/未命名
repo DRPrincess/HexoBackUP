@@ -1,0 +1,40 @@
+－ 打飞机
+我愿化成天使守护你，借你双翼，带你回家，好好睡一觉吧，醒来我们就到了。
+－ 11路
+回家的同时，还成冲击微信步数排行榜冠军。
+－ 毛驴
+古有老子倒骑青牛过函谷关，今有你，算了，还是正骑吧，安全最重要。
+－ 趴火车
+你真的很幸福，至少你成功的进站了，想想排队的人潮，我想你值得骄傲。
+－ 汽车
+如果你晕车的话，请带好晕车药，如果你不晕车的话，请带够小零食。
+－ 共享单车
+你会选择和谁一起回家见家长呢？小黄，小蓝，小白还是小橙？
+－ 平衡车
+就这样御风飞驰吧，少年，最好选择忍者奔跑的姿势，你一定是人群中的焦点。
+-顺风车
+就这样，在路上却认识了家乡的很多人，缘分，妙不可言。
+
+
+
+pravite void showExceptionMsgLayout(ViewGroup vg, String hint,int res){
+
+final View view = LayoutInflater.from(this).inflate(R.layout.exception_layout, null);
+
+LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT);
+
+LinearLayout outLayout = (LinearLayout) view.findViewById(R.id.outLayout);
+
+outLayout.setLayoutParams(layoutParams);
+
+LinearLayout layout = (LinearLayout) view.findViewById(R.id.layout);
+
+ImageView image = (ImageView) view.findViewById(R.id.image);
+
+TextView btn = (TextView) view.findViewById(R.id.btn);
+
+btn.setText(hint);
+
+image.setImageResource(res));
+
+}

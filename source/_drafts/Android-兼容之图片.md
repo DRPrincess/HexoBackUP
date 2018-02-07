@@ -6,6 +6,8 @@ tags:
 
 # 分享有用的参考资料
 [520设计-设计尺寸规范](http://www.sj520.cn/tools/size/#18)
+[Android 界面设计视觉规范](http://www.25xt.com/android)
+[GitHub 表示版本的小图标](https://shields.io/)
 
 # 启动图标
 
