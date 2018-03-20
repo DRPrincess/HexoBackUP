@@ -1,8 +1,12 @@
 ---
-title: Android-少不了的 AAR 文件常识，最好知道的注意事项.md
+title: Android-少不了的 AAR 文件常识，最好知道的注意事项
 date: 2018-01-31 10:32:29
 tags:
 ---
+
+ AAR, Android Archive,认识起来～
+<!--more-->
+
 # AAR，为 Android 而生。
 
 在使用 Eclipse 开发 Android 的那个时代（其实也就几年前而已），如果想代码打包，只有 `JAR` 包一个方法，但是 `JAR` 只能把 Java 文件代码打包进去，如果要使用一个有布局和资源的库的话，除了将 `JAR` 放入 libs 外,还需要引入相关的资源和配置文件，十分不优雅。
@@ -211,4 +215,4 @@ implementation('com.chemao.android:chemao-sdk:1.2.3') {
 
 # 最后
 
-依赖 Maven 上 Library Module 的前提是 Maven 上有这个库，于是，下篇博客《Android-Library Module 上传 Maven 仓库》，走起～
+依赖 Maven 上 Library Module 的前提是 Maven 上有这个库，于是，下篇博客[《 Android-发布项目到到 JCenter 仓库》](http://blog.csdn.net/qq_32452623/article/details/79282605)，走起～
