@@ -57,6 +57,14 @@ compile "com.android.support:appcompat-v7:${rootProject.ext.supportLibraryVersio
 
 ```
 
+Q3:Error:Execution failed for task ':basiclib:processDebugAndroidTestResources'.
+> Error: more than one library with package name 'android.support.test'
+
+androidTestCompile("com.android.support.test.espresso:espresso-core:${rootProject.ext.espressoVersion}", {
+       exclude group: 'com.android.support', module: 'support-annotations'
+   })
+
+其他版本未经过充分测试，但已发现，3.0.2 会出现这个问题，2.2.2不会
 
 # 第一步：整理 BaseComponent
 
