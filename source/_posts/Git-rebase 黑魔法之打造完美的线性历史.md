@@ -150,3 +150,15 @@ rebase 想较于 merge 的优点就是完美的线性历史了。不扯什么分
 其实 rebase 还有一种用法 `rebase -i`，被成为交互式 rebase ,又是一个强大的黑魔法，威力太大所以单独成篇，后续[《Git-rebase 黑魔法之打磨 commit 颗粒度》](http://blog.csdn.net/qq_32452623/article/details/79475057)已经发布，敬请关注！
 
 小伙伴们，下篇博客见～
+
+
+
+---
+
+刚刚开通了个人微信公众号，最新的博客，好玩的事情，都会在上面分享，欢迎关注，让我们一起学习和成长。
+
+<div  align="center">    
+
+![微信公众号](http://oriwplcze.bkt.clouddn.com/qrcode_for_gh_e8f891ce77fb_258.jpg)
+
+</div>

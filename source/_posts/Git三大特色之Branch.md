@@ -308,3 +308,14 @@ git push origin <name> //用回滚后的本地分支重新建立远程分支
 
 这篇博客用了我不少洪荒之力，希望对大家理解 Git 分支有所帮助，不对之处还请指出。   
 最近 Git 系列走起，下篇博客见！
+
+
+---
+
+刚刚开通了个人微信公众号，最新的博客，好玩的事情，都会在上面分享，欢迎关注，让我们一起学习和成长。
+
+<div  align="center">    
+
+![微信公众号](http://oriwplcze.bkt.clouddn.com/qrcode_for_gh_e8f891ce77fb_258.jpg)
+
+</div>

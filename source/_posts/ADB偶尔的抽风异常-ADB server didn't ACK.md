@@ -90,3 +90,13 @@ sdkmanager 是 Android SDK 提供的一个命令行工具，可以查看，安�
   2.去 SDK 文件夹中替换 platform-tools 文件夹。
 
   ![](http://oriwplcze.bkt.clouddn.com/7a3b38112e57b8e8411a2782758e9435.png)
+
+---
+
+  刚刚开通了个人微信公众号，最新的博客，好玩的事情，都会在上面分享，欢迎关注，让我们一起学习和成长。
+
+  <div  align="center">    
+
+  ![微信公众号](http://oriwplcze.bkt.clouddn.com/qrcode_for_gh_e8f891ce77fb_258.jpg)
+
+  </div>

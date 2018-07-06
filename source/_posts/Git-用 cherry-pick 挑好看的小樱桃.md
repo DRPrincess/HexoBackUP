@@ -173,3 +173,13 @@ git cherry-pick --abort //停止本次操作
 # 尾篇
 
 对于这个命令来说，理解 commit 的本质是修改很关键。好了，下篇博客见～，这个3月要将当初计划的 Git 系列博客补完，Fighting！
+
+---
+
+刚刚开通了个人微信公众号，最新的博客，好玩的事情，都会在上面分享，欢迎关注，让我们一起学习和成长。
+
+<div  align="center">    
+
+![微信公众号](http://oriwplcze.bkt.clouddn.com/qrcode_for_gh_e8f891ce77fb_258.jpg)
+
+</div>

@@ -355,3 +355,16 @@ allprojects {
 [《How to publish Android Library on Bintray/JCenter》](http://blogs.quovantis.com/how-to-publish-android-library-on-bintrayjcenter/)  
 [《放弃JitPack，发布Android Library到Bintray、JCenter》](https://www.jianshu.com/p/9f81d5b5a451)  
 [《 Android 快速发布开源项目到jcenter》](http://blog.csdn.net/lmj623565791/article/details/51148825)
+
+
+
+
+---
+
+刚刚开通了个人微信公众号，最新的博客，好玩的事情，都会在上面分享，欢迎关注，让我们一起学习和成长。
+
+<div  align="center">    
+
+![微信公众号](http://oriwplcze.bkt.clouddn.com/qrcode_for_gh_e8f891ce77fb_258.jpg)
+
+</div>

@@ -199,3 +199,14 @@ git revert head^^^..head
 下篇博客会讲一个特别治愈的命令 reflog，和 reset 配合可以被用来恢复数据，包括已经撤销的，敬请期待，并欢迎关注我的专栏 [《帅气的 Git 操作》](http://blog.csdn.net/column/details/17721.html)，里面有开始学习 Git 到现在的全部文章。
 
 see you next blog！
+
+
+---
+
+刚刚开通了个人微信公众号，最新的博客，好玩的事情，都会在上面分享，欢迎关注，让我们一起学习和成长。
+
+<div  align="center">    
+
+![微信公众号](http://oriwplcze.bkt.clouddn.com/qrcode_for_gh_e8f891ce77fb_258.jpg)
+
+</div>

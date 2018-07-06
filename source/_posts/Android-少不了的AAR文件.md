@@ -216,3 +216,16 @@ implementation('com.chemao.android:chemao-sdk:1.2.3') {
 # 最后
 
 依赖 Maven 上 Library Module 的前提是 Maven 上有这个库，于是，下篇博客[《 Android-发布项目到到 JCenter 仓库》](http://blog.csdn.net/qq_32452623/article/details/79282605)，走起～
+
+
+
+
+---
+
+刚刚开通了个人微信公众号，最新的博客，好玩的事情，都会在上面分享，欢迎关注，让我们一起学习和成长。
+
+<div  align="center">    
+
+![微信公众号](http://oriwplcze.bkt.clouddn.com/qrcode_for_gh_e8f891ce77fb_258.jpg)
+
+</div>

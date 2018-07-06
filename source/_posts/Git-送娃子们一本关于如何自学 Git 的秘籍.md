@@ -93,3 +93,13 @@ geeeeeeeeek的[《git-recipes》](https://github.com/geeeeeeeeek/git-recipes)
 所以，希望大家学习如何使用 Git 的同时，尝试去理解它,不久之后，你可能突然一瞬间就豁然开朗了。
 
 最后，希望大家都能知其所以然。虽然 Git 系列结束了，仍然盼望 see you next blog !
+
+---
+
+刚刚开通了个人微信公众号，最新的博客，好玩的事情，都会在上面分享，欢迎关注，让我们一起学习和成长。
+
+<div  align="center">    
+
+![微信公众号](http://oriwplcze.bkt.clouddn.com/qrcode_for_gh_e8f891ce77fb_258.jpg)
+
+</div>

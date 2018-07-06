@@ -198,3 +198,14 @@ Tools 也是 Android SDK 的一个组件，包括一套完整的 Android 开发�
 为了避免出现这种情况，要定期更新 Build-Tools ,Platform-Tools 和 Tools,保持较新的版本。
 
 然后，下篇博客见。
+
+
+---
+
+刚刚开通了个人微信公众号，最新的博客，好玩的事情，都会在上面分享，欢迎关注，让我们一起学习和成长。
+
+<div  align="center">    
+
+![微信公众号](http://oriwplcze.bkt.clouddn.com/qrcode_for_gh_e8f891ce77fb_258.jpg)
+
+</div>

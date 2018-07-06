@@ -1,3 +1,4 @@
+
 ---
 title: Git-叹为观止的 log 命令 & 其参数
 date: 2018-03-18 12:12:01
@@ -265,3 +266,14 @@ git config --global alias.lg "log --graph --pretty=format:'%Cred%h%Creset -%C(ye
 这篇博客满足不了您的需求的同学们，自行去官方文档上看，这里再贴一下伟大的官方文档连接：[git-log 官方文档连接在此，您请去吧！](https://git-scm.com/docs/git-log)
 
 最后，see you next blog 。
+
+
+---
+
+刚刚开通了个人微信公众号，最新的博客，好玩的事情，都会在上面分享，欢迎关注，让我们一起学习和成长。
+
+<div  align="center">    
+
+![微信公众号](http://oriwplcze.bkt.clouddn.com/qrcode_for_gh_e8f891ce77fb_258.jpg)
+
+</div>

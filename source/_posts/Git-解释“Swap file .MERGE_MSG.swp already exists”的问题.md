@@ -84,3 +84,14 @@ PS：
 git merge -abort  // 会删除 merge_* 文件
 rm .git/.MERGE_MSG.sw* // 会删除 .MERGE_MSG.sw* 文件
 ```
+
+
+---
+
+刚刚开通了个人微信公众号，最新的博客，好玩的事情，都会在上面分享，欢迎关注，让我们一起学习和成长。
+
+<div  align="center">    
+
+![微信公众号](http://oriwplcze.bkt.clouddn.com/qrcode_for_gh_e8f891ce77fb_258.jpg)
+
+</div>

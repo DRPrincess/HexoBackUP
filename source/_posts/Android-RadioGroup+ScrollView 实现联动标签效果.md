@@ -121,3 +121,14 @@ mRadioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() 
 发现一个待改进的问题，就是 scrollView 调用 smoothScrollTo(0，Y) 方法其实也是会多次触发 onScrollChanged()。虽然最后实现了效果，但是总是有点不对的，这个问题后面会再优化。
 
 技术粗浅，如果有不对的地方，还请留言告知。
+
+
+---
+
+刚刚开通了个人微信公众号，最新的博客，好玩的事情，都会在上面分享，欢迎关注，让我们一起学习和成长。
+
+<div  align="center">    
+
+![微信公众号](http://oriwplcze.bkt.clouddn.com/qrcode_for_gh_e8f891ce77fb_258.jpg)
+
+</div>

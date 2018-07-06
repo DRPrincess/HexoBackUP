@@ -45,3 +45,15 @@ adb 和 aapt 都是 Android SDK 自带的工具，adb 位于 sdk/platform-tools,
 
 拿微信试一下：
 ![](http://oriwplcze.bkt.clouddn.com/3b10b5f52f344b2e1cb528dd8735aeb5.png)
+
+
+
+---
+
+刚刚开通了个人微信公众号，最新的博客，好玩的事情，都会在上面分享，欢迎关注，让我们一起学习和成长。
+
+<div  align="center">    
+
+![微信公众号](http://oriwplcze.bkt.clouddn.com/qrcode_for_gh_e8f891ce77fb_258.jpg)
+
+</div>

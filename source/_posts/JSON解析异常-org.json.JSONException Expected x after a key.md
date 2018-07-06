@@ -69,3 +69,15 @@ JSON 转换失败一般有以下两个原因：
 ![](https://camo.githubusercontent.com/0d45c79c54ab57f6efe31e9019b11d93974fa039/687474703a2f2f75706c6f61642d696d616765732e6a69616e7368752e696f2f75706c6f61645f696d616765732f3136363836362d666639646333333661663732643764372e6769663f696d6167654d6f6772322f6175746f2d6f7269656e742f7374726970)
 
 [戳这里去看 GsonFormat 的 Github 仓库 ](https://github.com/zzz40500/GsonFormat),上面有详细的使用说明，有问题可以搜索 issue 解决或者创建 issue 求助,千万别学我提这种搞笑的乌龙 issue ，笑哭自己。
+
+
+
+---
+
+刚刚开通了个人微信公众号，最新的博客，好玩的事情，都会在上面分享，欢迎关注，让我们一起学习和成长。
+
+<div  align="center">    
+
+![微信公众号](http://oriwplcze.bkt.clouddn.com/qrcode_for_gh_e8f891ce77fb_258.jpg)
+
+</div>

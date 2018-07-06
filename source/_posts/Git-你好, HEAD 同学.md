@@ -169,3 +169,14 @@ git checkout --detach
 # 尾篇
 
  没什么要说的了，但是一定要有个尾篇，让这篇博客的结束优点仪式感～
+
+
+ ---
+
+ 刚刚开通了个人微信公众号，最新的博客，好玩的事情，都会在上面分享，欢迎关注，让我们一起学习和成长。
+
+ <div  align="center">    
+
+ ![微信公众号](http://oriwplcze.bkt.clouddn.com/qrcode_for_gh_e8f891ce77fb_258.jpg)
+
+ </div>

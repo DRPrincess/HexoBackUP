@@ -394,3 +394,15 @@ mEditText.setFilters(new InputFilter[]{new MoneyValueFilter().setDigits(3)});
 
 
 另外，关于限制两位小树输入的需求的代码已上传我的 github，项目地址为 [DR_MoneyEditTextDemo](https://github.com/DRPrincess/DR_MoneyEditTextDemo),欢迎 Star,热烈欢迎 Follow 。
+
+
+
+---
+
+刚刚开通了个人微信公众号，最新的博客，好玩的事情，都会在上面分享，欢迎关注，让我们一起学习和成长。
+
+<div  align="center">    
+
+![微信公众号](http://oriwplcze.bkt.clouddn.com/qrcode_for_gh_e8f891ce77fb_258.jpg)
+
+</div>

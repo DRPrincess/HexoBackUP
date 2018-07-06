@@ -425,3 +425,15 @@ gradlew build --refresh-dependencies
 [《导入第三方Jar包到Nexus私服》](http://blog.csdn.net/qq3516744991/article/details/70836292)
 
 [《强制清除 gradle 依赖缓存》](http://blog.csdn.net/ziwang_/article/details/76383203)
+
+
+
+---
+
+刚刚开通了个人微信公众号，最新的博客，好玩的事情，都会在上面分享，欢迎关注，让我们一起学习和成长。
+
+<div  align="center">    
+
+![微信公众号](http://oriwplcze.bkt.clouddn.com/qrcode_for_gh_e8f891ce77fb_258.jpg)
+
+</div>
