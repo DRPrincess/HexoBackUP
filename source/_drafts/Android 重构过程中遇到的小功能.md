@@ -168,3 +168,54 @@ https://blog.csdn.net/x1971481259/article/details/78214411
 https://blog.csdn.net/fei20121106/article/details/54292892
 https://developer.android.com/studio/known-issues
 https://guides.gradle.org/building-android-apps/
+
+32.
+https://blog.csdn.net/EatGrapes/article/details/73274540
+```
+building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+> unable to find valid certification path to requested target
+```
+
+将last-version 和 + 改成确定版本
+
+
+33. androidStudio  安装 apk 的命令
+$ adb push /Users/admin/AndroidStudioProjects/AAAA/ReallyCarandroidnew/sellcarcomponent/build/outputs/apk/debug/sellcarcomponent-debug.apk /data/local/tmp/com.sellcarcomponent
+$ adb shell pm install -t -r "/data/local/tmp/com.sellcarcomponent"
+$ adb shell am start -n "com.sellcarcomponent/com.sellcarcomponent.ui.sellcar.SellCarActivity" -a android.intent.action.MAIN -c android.intent.category.LAUNCHER
+
+
+34. Android apk出现两个应用图标
+https://blog.csdn.net/u010899138/article/details/53516400
+
+35. Error:Error converting bytecode to dex:
+Cause: com.android.dex.DexIndexOverflowException: field ID not in [0, 0xffff]: 65536
+
+65536 方法数限制
+https://www.jianshu.com/p/15dd2d432b9c
+36. chromium: [ERROR:interface_registry.cc(104)] Failed to locate a binder for interface: autofill::mojom::PasswordManagerDriver
+
+开头 https和http 的关系；
+
+https://testreallycarm.365eche.net/tools/4s?token=1aa06eca57f70c55142028d9fdb043ae
+http://testreallycarm.365eche.net/tools/4s?token=40d61214d367e373bf4d12a79db829dd
+
+37. Arouter 中service中的 Context 无法创建弹出对话框                                          io.reactivex.exceptions.UndeliverableException: android.view.WindowManager$BadTokenException: Unable to add window -- token null is not for an application
+38. convertView = LayoutInflater.from(mContext).inflate(R.layout.item_remark_image, parent,false);
+convertView = LayoutInflater.from(mContext).inflate(R.layout.item_remark_image, null);
+两种方式会造成 adapter 中行布局显示高度不受布局中限制的高度控制，原因是什么。
+
+39. Android Studio 关联项目源码
+
+https://blog.csdn.net/u013904672/article/details/54174347
+
+40. 自定义相机，预览图比系统相机放大的问题原因是 预览所用的View比例 是4:3，preview size 是 16:9，裁剪放大所致。
+
+解决方法是，控制比例一致。但是导致以上问题的原因是预览图放入 FramLayout,设置的是高度，高度会变化变成占满全屏高度。不知道为什么，挺奇怪的。
+
+41. seekBar MaxHeight 代码设置高度问题；
+ https://blog.csdn.net/sun_lianqiang/article/details/80902827
+
+
+42. transformDexArchiveWithExternalLibsDexMergerForDebug
+https://blog.csdn.net/u012214003/article/details/79632675

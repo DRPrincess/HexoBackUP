@@ -54,11 +54,31 @@
 
   5. UI调整（所需时间需要看具体UI图）
 
+----
 
+# 截止到2018.8.20 总结
 
-# 重构过程中会使用三方库
- 后续待更新
- |第三方库|GitHub链接|
- |----|----|
- |Okhttp|https://github.com/square/okhttp/|
- |Gson|https://github.com/google/gson|
+因为公司停业原因，组件化项目不得不暂停，目前进度和原先计划有所不同，暂时没有做版本兼容和全部架构调整，业务模块已经全部分离开。
+
+- app ： 主框架模块，有启动和欢迎页面，并负责连接其他模块
+- baselib : 基本二方库，通用的工具类和自定义控件
+- cmnetworklib : fapi 封装网络库
+- basicRes : 真容二手车的通用资源管理，包括路由和Base类
+- buycarcomponent : 买车模块
+- sellcarcomponent : 卖车模块
+- carbrandcomponent : 车型款选择模块
+- citycomponent : 选择城市模块
+- couponcomponent : 优惠券功能模块
+- settingcomponent : APP设置模块
+- updatecomponent : APP更新模块
+- usercomponent : 用户登录模块
+- onlinecertcomponent : 在线检测模块
+
+---
+
+待完成：
+
+- 微信分享组件化接入
+- 个推组件化接入方案
+- 百度定位组件化接入方案
+- 友盟统计组件化接入方案
