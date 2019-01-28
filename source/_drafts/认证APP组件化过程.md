@@ -32,7 +32,7 @@ applicationVariants.all { variant ->
 
 Q2:支持库的版本不统一问题
 
-![](http://oriwplcze.bkt.clouddn.com/23ad69bac2e3411e72c789efda09f4da.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/23ad69bac2e3411e72c789efda09f4da.png)
 
 rootProject的build.gradle
 ```

@@ -24,12 +24,12 @@ AAR，名字来源于 Android Archive，见名知义，是一个 Android 库项�
 
 3.如果修改了代码，也可以通过 Build > Make Project 的方式重新生成文件。  
 
-![](http://oriwplcze.bkt.clouddn.com/9182de5e5cb2c4919cd72172d73d06a1.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/9182de5e5cb2c4919cd72172d73d06a1.png)
 
 
 其实这个过程，也生成了对应的 JAR 包，文件在`项目名称/模块名称/build/intermediates/bundles/debug(release)／classes.jar`，classes.jar 这个library 对应的 JAR 包。
 
-![](http://oriwplcze.bkt.clouddn.com/357ba7783bf87adec2e0ac83a4685c68.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/357ba7783bf87adec2e0ac83a4685c68.png)
 
 不过在 AAR 文件中，修改后缀名打开后，里面也有 classes.jar ,和这个 classes.jar 是同样的内容，
 
@@ -53,7 +53,7 @@ AAR 文件的文件扩展名为 .aar，文件本身是一个 zip 文件，以下
 
 我们拿到上个步骤中生成的 .aar 文件,手动将后缀名改成 .zip文件，解压之后的样子是这个样子的：
 
-![](http://oriwplcze.bkt.clouddn.com/75a15c1ec3127089eac44e671fe2534d.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/75a15c1ec3127089eac44e671fe2534d.png)
 
 
 
@@ -226,6 +226,6 @@ implementation('com.chemao.android:chemao-sdk:1.2.3') {
 
 <div  align="center">    
 
-![微信公众号](http://oriwplcze.bkt.clouddn.com/qrcode_for_gh_e8f891ce77fb_258.jpg)
+![微信公众号](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/qrcode_for_gh_e8f891ce77fb_258.jpg)
 
 </div>

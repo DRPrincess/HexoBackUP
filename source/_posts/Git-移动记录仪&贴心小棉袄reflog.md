@@ -17,11 +17,11 @@ reflog,可以分为两个单词，Reference log，引用日志。当本地仓库
 
 关于引用是什么？引用的移动是什么？这哥们又是怎么记录这种移动的呢？这些问题先放着，我们先在我的测试项目中，执行下 `git reflog` 来瞅瞅。
 
-![HEAD的 reflog](http://oriwplcze.bkt.clouddn.com/3ab4a43030d044c8a8689a86b601d271.png)
+![HEAD的 reflog](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/3ab4a43030d044c8a8689a86b601d271.png)
 
 因为做过很多操作，有很多条记录，数据太多，你可能一下看不懂，所以来化繁为简分析一下，单条记录中每个数据都代表着什么？
 
-![](http://oriwplcze.bkt.clouddn.com/695448407a69cfea6916a1ef83b8f65a.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/695448407a69cfea6916a1ef83b8f65a.png)
 
 1. `41b9778` 是 commit 的 SHA1 值,需要特别注意，它是移动后的 commit。
 2. `HEAD@{2}` 是标识这是 HEAD 指针2个移动前的指向内容（从当前往回数第3个操作），也就是上面的`41b9778` 。
@@ -65,9 +65,9 @@ git reflog <ref>
 ```
 
 
-![feature/test 的 re flog](http://oriwplcze.bkt.clouddn.com/3364f839284078b340e69e84af81209a.png)
+![feature/test 的 re flog](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/3364f839284078b340e69e84af81209a.png)
 
-![master 的 re flog](http://oriwplcze.bkt.clouddn.com/1fee4f3118e50a25c3c13ebf28171ea8.png)
+![master 的 re flog](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/1fee4f3118e50a25c3c13ebf28171ea8.png)
 
 
 # reflog 的治愈力
@@ -90,28 +90,28 @@ git reflog <ref>
 - **恢复`reset --hard `**
 
 1.先模拟一个`reset --hard `操作。
-![](http://oriwplcze.bkt.clouddn.com/e6799f4cdea46f40017618e7801336e7.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/e6799f4cdea46f40017618e7801336e7.png)
 
 2.找到 `reset` 操作前的 commit
-![](http://oriwplcze.bkt.clouddn.com/75a5472eb7af18c62236c66fa282e899.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/75a5472eb7af18c62236c66fa282e899.png)
 
 3.`git reset --hard  <commit>` 直接恢复操作前的历史。这一步使用 `git reset --hard  HEAD@{1}`也可以，都是一个意思。
-![](http://oriwplcze.bkt.clouddn.com/35dd19b2cdcc0bd6af6ee9e94aa37b2c.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/35dd19b2cdcc0bd6af6ee9e94aa37b2c.png)
 
 
 - **恢复`git branch -D <branch>`**
 
 
 1.先模拟一个`git branch -D <branch `操作。
-![](http://oriwplcze.bkt.clouddn.com/528915ac59d7c49abe344f137da7fe18.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/528915ac59d7c49abe344f137da7fe18.png)
 
 2.删除操作不会导致 HEAD 指针变化，而且删除之后  feature/test 指针也没了，怎么办呢，这个就要从 HEAD 指针的记录里面翻翻看，找到上次在这个分支上的操作记录。删除分支如果是最新操作过的，一般很好找到。
 
 找到 checkout 的操作，很容易分析出，feature/test 的指针指向的提交是 `41b9778`。
-![](http://oriwplcze.bkt.clouddn.com/40d5389362a84341d091c31cb6b43f24.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/40d5389362a84341d091c31cb6b43f24.png)
 
 3.`git checkout <commit> -b <branch>` 将该提交检出为一个新分支，新分支起名为 feature/test ，就相当于误删分支的恢复了。
-![](http://oriwplcze.bkt.clouddn.com/dfe3f32d08cc59163db566b9eb8b4b34.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/dfe3f32d08cc59163db566b9eb8b4b34.png)
 
 
 # 写在最后
@@ -133,6 +133,6 @@ git reflog <ref>
 
 <div  align="center">    
 
-![微信公众号](http://oriwplcze.bkt.clouddn.com/qrcode_for_gh_e8f891ce77fb_258.jpg)
+![微信公众号](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/qrcode_for_gh_e8f891ce77fb_258.jpg)
 
 </div>

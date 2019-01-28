@@ -11,7 +11,7 @@ tags:
 不，还没完，作为一个 Android 开发者，我们接下来做的事情还有不少呢。  
 <!-- more -->
 
-![用打包礼物的心情打包 apk ](http://oriwplcze.bkt.clouddn.com/image/%E5%8D%9A%E5%AE%A2%E5%B0%81%E9%9D%A2/package.jpeg)
+![用打包礼物的心情打包 apk ](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/image/%E5%8D%9A%E5%AE%A2%E5%B0%81%E9%9D%A2/package.jpeg)
 
 # <font color="#008000">前言</font>
 
@@ -210,6 +210,6 @@ zipalign 是 Android SDK 提供代码对齐工具, 位于 Android SDK/build-tool
 
 <div  align="center">    
 
-![微信公众号](http://oriwplcze.bkt.clouddn.com/836a36d6a91d859428783f8ea2ce85d7.png)
+![微信公众号](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/836a36d6a91d859428783f8ea2ce85d7.png)
 
 </div>

@@ -14,7 +14,7 @@ tags:
 
 今天从 Android Studio 中点击SDK中的类，发现查看不了源码，并有如下提示：
 
-![](http://oriwplcze.bkt.clouddn.com/AndroidStudio-SourceCode1.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/AndroidStudio-SourceCode1.png)
 
 大概是因为前几天我清理磁盘空间，不小心把已经下载的源码给清理了。
 
@@ -28,14 +28,14 @@ tags:
 
 Android Studio 会根据 compileSdkVersion 的值去加载对应版本的源码包。所以，源码包选择下载的版本和编译版本 保持一致。
 
-![](http://oriwplcze.bkt.clouddn.com/AndroidStudio-SourceCode2.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/AndroidStudio-SourceCode2.png)
 
 ###Step2.关联源码
 
 找到 jdk.table.xml,找到源码相应版本的 < sourcePath>标签,把源码路径写进去就可以了。
 
 
-![](http://oriwplcze.bkt.clouddn.com/AndroidStudio-SourceCode3.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/AndroidStudio-SourceCode3.png)
 
 
 - 源码路径：    
@@ -63,5 +63,5 @@ Android Studio 会根据 compileSdkVersion 的值去加载对应版本的源码�
 ---
 <center>
 <font color=gray>欢迎关注博主的微信公众号，快快加入哦，期待与你一起成长！</font>
-<img src="http://oriwplcze.bkt.clouddn.com/qrcode_130.png" width="130" height="130" />
+<img src="http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/qrcode_130.png" width="130" height="130" />
 </center>

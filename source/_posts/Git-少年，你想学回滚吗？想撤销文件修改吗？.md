@@ -17,33 +17,33 @@ tags:
 
 来，看下面这张图复习复习 Git 三大区的概念，这个概念即将贯穿今天这篇文章，理解很重要，不太理解的小伙伴可以先去我的另一篇博客 [《 Git三大特色之Stage(暂存区)》](http://blog.csdn.net/qq_32452623/article/details/78417609)学习下先，等你哦。
 
-![git 数据流程图示意图](http://oriwplcze.bkt.clouddn.com/2429e4d2661e60027537aea0077f6e40.png)
+![git 数据流程图示意图](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/2429e4d2661e60027537aea0077f6e40.png)
 
 # 吃第一颗栗子，理解一下什么叫做回滚
 
 有一个Android 开发工程师，他叫小明，他正在 feature 分支上开发，他的 feature 分支历史如下图所示，一切都很正常，按照计划进行，这时他接到一个需求变更通知，说“用户积分模块，这个版本不要了”，这真是一个悲伤的消息，小明要赶紧改回来。
 
-![](http://oriwplcze.bkt.clouddn.com/4ba9d150f15cad53e1e7c03f85b29ba1.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/4ba9d150f15cad53e1e7c03f85b29ba1.png)
 
 如果小明不会回滚历史，需要人肉操作去找有关 “用户积分模块” 的代码，然后一个个注或删除释掉，这个更悲伤了，我猜小明可能会哭。
 
 ![]()
- <img src="http://oriwplcze.bkt.clouddn.com/a2f4dacda721f1076b50ec57f9c53eeb.png" width="30%" style="text-align:center;"alt="还在路上，稍等..."/>
+ <img src="http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/a2f4dacda721f1076b50ec57f9c53eeb.png" width="30%" style="text-align:center;"alt="还在路上，稍等..."/>
 
 
 如果小明用的是 Git,也知道怎么回滚，他只需要找到回滚的终点提交，然后一个命令就可以开始回滚操作。
 
-![](http://oriwplcze.bkt.clouddn.com/eef7ad56aeb25780f56ca174817e9754.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/eef7ad56aeb25780f56ca174817e9754.png)
 
-![](http://oriwplcze.bkt.clouddn.com/630aded19c1e67485a03058b1a550712.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/630aded19c1e67485a03058b1a550712.png)
 
 如果小明是个老手，他会先新建个分支做备份，然后再回滚，那也只需要两条命令：
 
-![](http://oriwplcze.bkt.clouddn.com/d55b818b1c8b91db730067767416ce06.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/d55b818b1c8b91db730067767416ce06.png)
 
 以上完美解决此时的需求变更，小明很开心。
 
-![](http://oriwplcze.bkt.clouddn.com/da57beece1716966443daaedd14b8544.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/da57beece1716966443daaedd14b8544.png)
 
 
 # 拿起你的栗子，来认识 reset 的三种模式
@@ -55,7 +55,7 @@ tags:
 
 三个参数对应的是不同的作用范围，这个范围和开篇说的 Git 三大区息息相关，因为这个三个模式就是因为有三个分区才存在的。
 
-![](http://oriwplcze.bkt.clouddn.com/493ba44224a5e1b32703cf063a7f5979.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/493ba44224a5e1b32703cf063a7f5979.png)
 
 实际使用中，你可能会遇到各种千奇百怪需求的的撤销操作，理解好这三种模式的区别，使用起来倍爽。下面列两三个你肯定会遇到的场景，然后用 reset 的不同模式。可以轻松解决问题。
 
@@ -125,18 +125,18 @@ git revert head^^^..head
 ```
 
 
-![](http://oriwplcze.bkt.clouddn.com/7d4913f29fc3f0d1c08a37f60ef28264.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/7d4913f29fc3f0d1c08a37f60ef28264.png)
 
 `git log` 看一下操作后的分支历史，不仅没少，反而多了，增加几个反转提交。
 
-![](http://oriwplcze.bkt.clouddn.com/9fe25ca56846ed14eb28ff9aab67ae78.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/9fe25ca56846ed14eb28ff9aab67ae78.png)
 
 这是 revert 第一个例子中场景的使用表现，也许你会疑问：
 >有了 reset,为什么还要有 revert ？
 
 这是因为，在下图情况下，分支顶端还有要保存的提交，reset 无法使用，只能用 revert 将中间的提交反转。
 
-![](http://oriwplcze.bkt.clouddn.com/d5ca3d2e97cebf297f0b07463522c226.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/d5ca3d2e97cebf297f0b07463522c226.png)
 
 如果不想要新增的反转提交污染分支历史，你也可以选择发射你的黑魔法 `rebase -i` 将中间的提交施加 `drop` 操作,Git 真的无所不能，只要你会。
 
@@ -146,7 +146,7 @@ git revert head^^^..head
 由于 `reset ` 和  `revert` 的作用都是撤销提交，所以很多人很自然而然地将两者对比。我就是那很多人之一，而且我还特别无聊的，画了对比图，如下：
 
 
-![](http://oriwplcze.bkt.clouddn.com/6d6245216ee25a6f6872679d63a82b5a.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/6d6245216ee25a6f6872679d63a82b5a.png)
 
 可以很明显的看出两者对分支历史改变区别：
 
@@ -170,14 +170,14 @@ git revert head^^^..head
 
 `checkout` 这个命令，我们对它太熟悉了,切换分支，检出提交，检出 Tag 标签等等各种对 HEAD 指针花式操作，但是看下，[git-checkout](https://git-scm.com/docs/git-checkout) 官网文档的定义：
 
-![](http://oriwplcze.bkt.clouddn.com/ac2e827db1cb494f943043c2c1b948b2.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/ac2e827db1cb494f943043c2c1b948b2.png)
 
 
 是不是很惊讶，还可以被用来还原工作区的文件！  
 
 其实这个命令就近在我们眼前,运行 `git status`,会看到工作区和暂存区的修改，如果工作区有修改存在，Git 就会提示,可以通过 `git add <file>` 来加入暂存区以备下次提交，如果放弃修改，就执行 `git checkout -- <file>`。
 
-![git status中的 checkout](http://oriwplcze.bkt.clouddn.com/7210fbe7a8d398710dab5d59977d3298.png)
+![git status中的 checkout](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/7210fbe7a8d398710dab5d59977d3298.png)
 
 
 所以，要是哪次想撤回修改，恢复到上次 add 时内容 ，除了手动 `Command+Z` 或  `Ctrl+Z` ，还可以是使用 `git checkout -- <file>`，改动较多时，简直一步到位！
@@ -187,7 +187,7 @@ git revert head^^^..head
 
 接着上面，工作区`1.txt`的修改我想下次提交，于是执行了 `git add .` 加入了暂存区,这个时候运行 `git status`，又发现 reset 命令的新操作 `git reset HEAD <file>`。
 
-![git status 中的 reset](http://oriwplcze.bkt.clouddn.com/bff8db5752af1613d5e2953870c60c56.png)
+![git status 中的 reset](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/bff8db5752af1613d5e2953870c60c56.png)
 
 看注释，这个操作可以将某个文件的修改从暂存区拿出去。在错误 add 不想提交的文件时，这个命令还是很有用的。
 
@@ -207,6 +207,6 @@ see you next blog！
 
 <div  align="center">    
 
-![微信公众号](http://oriwplcze.bkt.clouddn.com/qrcode_for_gh_e8f891ce77fb_258.jpg)
+![微信公众号](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/qrcode_for_gh_e8f891ce77fb_258.jpg)
 
 </div>

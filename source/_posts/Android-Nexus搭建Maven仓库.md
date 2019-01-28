@@ -47,7 +47,7 @@ Maven 的远程仓库分为中央仓库和私服仓库。中央仓库存放了�
 
 下面是一张本地仓库，私服仓库和远程中央仓库的依赖下载示意图（构件可理解为三方的依赖包，是比较专业的说法）：
 
-![](http://oriwplcze.bkt.clouddn.com/02e031b659e40c3fa8876f5b89b0d180.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/02e031b659e40c3fa8876f5b89b0d180.png)
 
 
 
@@ -58,7 +58,7 @@ Maven 的远程仓库分为中央仓库和私服仓库。中央仓库存放了�
 Nexus 的话说的很霸气,自称为 **“世界上第一个也是唯一可以免费使用的通用储存库解决方案”**。
 
 
-![](http://oriwplcze.bkt.clouddn.com/11d41dde1d7948fa8a2ff8f35b38bec0.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/11d41dde1d7948fa8a2ff8f35b38bec0.png)
 
 
 Nexus 的 2.x 和 3.x 版本改动很多，我写下这篇博客的时候，Nexus 最新版本是 3.8.0，因此按照 3.8.0 记录。
@@ -70,20 +70,20 @@ Nexus 的 2.x 和 3.x 版本改动很多，我写下这篇博客的时候，Nexu
 
 想确认已安装的 Java 版本，可以运行 `java -version` 命令查看。
 
-![](http://oriwplcze.bkt.clouddn.com/8d21c50aa3dedf4ef4c5352cf76b2461.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/8d21c50aa3dedf4ef4c5352cf76b2461.png)
 
 
 ## 下载 Nexus
 
 去[ 官方网站](https://www.sonatype.com/download-oss-sonatype) 下载自己对应平台的 Nexus 安装包。
 
-![](http://oriwplcze.bkt.clouddn.com/09685a7edb962afb1921cb9b45e86079.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/09685a7edb962afb1921cb9b45e86079.png)
 
 ## 运行 Nexus
 
 将下载的压缩包，解压，会看到如下目录：
 
-![](http://oriwplcze.bkt.clouddn.com/140fe04a1972c2825c6b4a723357fd96.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/140fe04a1972c2825c6b4a723357fd96.png)
 
 进入 bin 目录，启动 Nexus 。
 
@@ -99,7 +99,7 @@ nexus.exe /run
 
 我使用的是 Mac，执行 `./nexus run`，运行结果如下：
 
-![](http://oriwplcze.bkt.clouddn.com/8d69e9e92fb4cc9484c6fc2187cec0d2.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/8d69e9e92fb4cc9484c6fc2187cec0d2.png)
 
 看到如上信息，Nexus 已经启动，
 
@@ -108,7 +108,7 @@ nexus.exe /run
 
 Nexus 启动成功之后，就会监听配置的IP地址和接口范围，默认的接口是 8081,在浏览器访问 [http://localhost:8081/](http://localhost:8081/),可以看到启动的本地 Nexus 仓库页面。如果别人想访问这个仓库的话，需要额外配置。
 
-![](http://oriwplcze.bkt.clouddn.com/bdd53e2b682d94314dc759737adc6282.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/bdd53e2b682d94314dc759737adc6282.png)
 
 
 界面上展示了未登录用户可以使用的功能。Nexus 提供了一个完全访问权限的管理用户。 用户名是 `admin`，密码是 `admin123`。 点击界面右上角的按钮登录。
@@ -121,7 +121,7 @@ Nexus 启动成功之后，就会监听配置的IP地址和接口范围，默认
 
 打开 Nexus 的 Repository 页面，可以看到 Nexus 默认为我们创建的仓库。
 
-![](http://oriwplcze.bkt.clouddn.com/10de81c706f82e13671a61af59b99773.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/10de81c706f82e13671a61af59b99773.png)
 
 注意 Type 列，展示了 Nexus 的仓库分类：  
 
@@ -134,7 +134,7 @@ Nexus 启动成功之后，就会监听配置的IP地址和接口范围，默认
 
   例如 maven-public 是一个 group 类型的仓库，通过引用这个地址，可以访问组内成员仓库的所有构件。
 
-  ![](http://oriwplcze.bkt.clouddn.com/0b6374cee58f2a3d7896d90c3a3b1bb0.png)
+  ![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/0b6374cee58f2a3d7896d90c3a3b1bb0.png)
 
 
 
@@ -265,13 +265,13 @@ apply from: 'upload_nexus.gradle'
 
 Android Studio 中打开右侧的 Gradle 侧边栏，打开 nexuslibrary,可以看到 `uploadArchives`,这就是刚才创建的上传 Task,点击即可完成上传。
 
-![](http://oriwplcze.bkt.clouddn.com/aee1bf2799be2a5aa58fdb7d5513968a.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/aee1bf2799be2a5aa58fdb7d5513968a.png)
 
 如果 uploadArchives Task 执行成功，在 Nexus 仓库中可以看到上传的构件包们。
 
-![](http://oriwplcze.bkt.clouddn.com/1276aff67738bd0563e27e9ca6ce5cdf.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/1276aff67738bd0563e27e9ca6ce5cdf.png)
 
-![](http://oriwplcze.bkt.clouddn.com/ece0a6437d223a4d1ba01d5c347d7504.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/ece0a6437d223a4d1ba01d5c347d7504.png)
 
 
 
@@ -304,7 +304,7 @@ compile 'com.dr:nexuslibrary:1.0.0'
 
 执行 sync gradle 之后，已经成功下载该三方库，可以正常应用该库中的公共类和方法。
 
-![](http://oriwplcze.bkt.clouddn.com/469f1320c5277a19b12af9bec96fbeac.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/469f1320c5277a19b12af9bec96fbeac.png)
 
 
 
@@ -320,7 +320,7 @@ compile 'com.dr:nexuslibrary:1.0.0'
 
 snapshot 仓库允许版本覆盖。当我上传多次上传同一个版本到 snapshot 仓库，会自动在版本号上添加时间戳来区分。
 
-![](http://oriwplcze.bkt.clouddn.com/e9fb5ab00bdeb12b75dc4eedc6f2dc07.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/e9fb5ab00bdeb12b75dc4eedc6f2dc07.png)
 
 
 那么问题来了，为什么存在这两个仓库？这个区别的存在意义是什么呢？
@@ -387,7 +387,7 @@ snapshot库是存放中间版本包的仓库，代表该库中依赖包的程序
 
 其中是否允许版本覆盖，是否可以删除版本，可以通过 Nexus Repository 设置：
 
-![](http://oriwplcze.bkt.clouddn.com/cfec316f6cf3a46c3974f08079c58869.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/cfec316f6cf3a46c3974f08079c58869.png)
 
 ### 拉取不到最新版本呢？
 
@@ -434,6 +434,6 @@ gradlew build --refresh-dependencies
 
 <div  align="center">    
 
-![微信公众号](http://oriwplcze.bkt.clouddn.com/qrcode_for_gh_e8f891ce77fb_258.jpg)
+![微信公众号](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/qrcode_for_gh_e8f891ce77fb_258.jpg)
 
 </div>

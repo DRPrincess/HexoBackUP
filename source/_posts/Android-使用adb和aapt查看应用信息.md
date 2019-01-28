@@ -24,7 +24,7 @@ adb 和 aapt 都是 Android SDK 自带的工具，adb 位于 sdk/platform-tools,
 ```
 
 例如获取版本信息   
-![](http://oriwplcze.bkt.clouddn.com/3e84606a33fce1fc91b3b37f87575bd8.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/3e84606a33fce1fc91b3b37f87575bd8.png)
 
 # adb-查看手机安装应用信息
 ```
@@ -34,7 +34,7 @@ adb 和 aapt 都是 Android SDK 自带的工具，adb 位于 sdk/platform-tools,
 ```
 
 试一下，用这个命令获取版本信息    
-![](http://oriwplcze.bkt.clouddn.com/c1136cbdab341f6ed40c20e018323e55.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/c1136cbdab341f6ed40c20e018323e55.png)
 
 这个命令是需要只要应用的 packageName,如果你不知道想查看应用的完整包名，也不用烦躁，下面这个命令可以帮你
 打开要查看的应用，执行下面的命令，可以获取当前应用的包名，以及当前页面所在的 Activity
@@ -44,7 +44,7 @@ adb 和 aapt 都是 Android SDK 自带的工具，adb 位于 sdk/platform-tools,
 ```
 
 拿微信试一下：
-![](http://oriwplcze.bkt.clouddn.com/3b10b5f52f344b2e1cb528dd8735aeb5.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/3b10b5f52f344b2e1cb528dd8735aeb5.png)
 
 
 
@@ -54,6 +54,6 @@ adb 和 aapt 都是 Android SDK 自带的工具，adb 位于 sdk/platform-tools,
 
 <div  align="center">    
 
-![微信公众号](http://oriwplcze.bkt.clouddn.com/qrcode_for_gh_e8f891ce77fb_258.jpg)
+![微信公众号](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/qrcode_for_gh_e8f891ce77fb_258.jpg)
 
 </div>

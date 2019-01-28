@@ -11,10 +11,10 @@ tags:
 
 这是一个很常见的需求，一般出现在有单位的数据展示上面。例如下面的两个例子，来源于我司项目的某一个页面。
 
-![](http://oriwplcze.bkt.clouddn.com/3f26803d70493844071c3c3c29ec0bdb.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/3f26803d70493844071c3c3c29ec0bdb.png)
 
 
-![](http://oriwplcze.bkt.clouddn.com/35ed97810a0d59a5a0decfd8d06924a0.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/35ed97810a0d59a5a0decfd8d06924a0.png)
 
 
 **如果让你实现图一的`3.07万元` 和图二的 `您的估价低于 80% 车主的估价`，你会怎么布局?**
@@ -59,7 +59,7 @@ tv2.setText(Html.fromHtml("<font color=\'#656565\'>您的估价</font><font colo
 
 显示效果：
 
-![](http://oriwplcze.bkt.clouddn.com/f98cf72aed2017b2529ac219a40c7756.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/f98cf72aed2017b2529ac219a40c7756.png)
 
 
 另外，大家注意到上面 `3.07万元`中两个字体大小不同，我是通过 `<big>3.07</big>` `<small>万元</small>` 去控制的。这个是因为 Android 中只支持 <font> 标签的 color 和 face 标签，不支持 size 标签。所以像下面的样式，无法显示 size 大小的。
@@ -100,7 +100,7 @@ tv4.setText(s2);
 
 显示效果：
 
-![](http://oriwplcze.bkt.clouddn.com/44a6b98fba6ea90260c1095c05462e65.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/44a6b98fba6ea90260c1095c05462e65.png)
 
 
 是不是很赞，来看一下实现过程：
@@ -134,7 +134,7 @@ spannableString.setSpan(Object what, int start, int end, int flags);
 
 SpannableString 提供了很多 Span 样式供开发者们选择，有用来设置大小，颜色，下划线，甚至还有点击事件的。我找了它们的继承结构图，截来给大家看一下 Span 们的家谱。
 
-![](http://oriwplcze.bkt.clouddn.com/193e91761cf0d3a37d52402dfef6e51b.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/193e91761cf0d3a37d52402dfef6e51b.png)
 
 
 上面例子中只用到了两个样式， ForegroundColorSpan 设置字体前景颜色，AbsoluteSizeSpan 设置字体大小，非常的简单。其实 Span 们功能远不止这些，但是这里不赘述了，大家可以自己多去尝试，下面是我觉得比较好的文章链接分享。
@@ -171,6 +171,6 @@ SpannableString 提供了很多 Span 样式供开发者们选择，有用来设�
 
 <div  align="center">    
 
-![微信公众号](http://oriwplcze.bkt.clouddn.com/qrcode_for_gh_e8f891ce77fb_258.jpg)
+![微信公众号](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/qrcode_for_gh_e8f891ce77fb_258.jpg)
 
 </div>

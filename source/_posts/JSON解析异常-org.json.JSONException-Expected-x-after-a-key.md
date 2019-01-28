@@ -15,9 +15,9 @@ tags:
 
 错误现场截图：
 
-![](http://oriwplcze.bkt.clouddn.com/4d58d873368d1fd254a1fd2d75bc890b.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/4d58d873368d1fd254a1fd2d75bc890b.png)
 
-![](http://oriwplcze.bkt.clouddn.com/750345e68b1fa64deb718ab973fe6800.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/750345e68b1fa64deb718ab973fe6800.png)
 
 
 
@@ -78,6 +78,6 @@ JSON 转换失败一般有以下两个原因：
 
 <div  align="center">    
 
-![微信公众号](http://oriwplcze.bkt.clouddn.com/qrcode_for_gh_e8f891ce77fb_258.jpg)
+![微信公众号](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/qrcode_for_gh_e8f891ce77fb_258.jpg)
 
 </div>

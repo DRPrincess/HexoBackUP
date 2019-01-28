@@ -79,32 +79,32 @@ JCenter 的用户资源很多并且十分活跃，而且是 Google 官方默认�
 
 1.去 [Bintray 网站](https://bintray.com/) 注册一个账号。Bintray 账号有个人账号和企业账号之分，这里切记，要注册个人号。看下图箭头所指：
 
-![注册](http://oriwplcze.bkt.clouddn.com/986b3b4ca8a1e4bc24522d6baa95d237.png)
+![注册](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/986b3b4ca8a1e4bc24522d6baa95d237.png)
 
 
 2.登录账号 ，点击 `Add New Repository` ,创建一个存储库，用来托管我们的代码。Name 可以任意，但是请填写 `maven`，后面会解释原因，Type 选择 Maven,剩下的是可选项，可以不填。
 
-![](http://oriwplcze.bkt.clouddn.com/02cc40cbea454246e0d177a85c14a038.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/02cc40cbea454246e0d177a85c14a038.png)
 
-![](http://oriwplcze.bkt.clouddn.com/6ed762c5f37863a69112c35c82146567.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/6ed762c5f37863a69112c35c82146567.png)
 
 
 3.进入刚才创建的 Repository，点击 `Add New Package`  ,创建 Package。Name 任意,Licences 选择 Apache-2.0,Version control 填入版本管理的地址，我填的是测试项目的 GitHub 仓库地址，其他项是选填，可以不填。
 
 
-![](http://oriwplcze.bkt.clouddn.com/ac265e711423bb4ba52d766666219d00.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/ac265e711423bb4ba52d766666219d00.png)
 
-![](http://oriwplcze.bkt.clouddn.com/1bbe57c5a28be401b5ebbb025f4202ef.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/1bbe57c5a28be401b5ebbb025f4202ef.png)
 
 # Step 2 : Android Studio 本地项目准备
 
 此步骤，就是准备好一个要上传的 Android Library Module 就好啦！
 
-![](http://oriwplcze.bkt.clouddn.com/98723597c6ff020bec3d53fe27bc2cc7.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/98723597c6ff020bec3d53fe27bc2cc7.png)
 
 这里我新建了一个空的库项目，在其中新建了一个 Java 类和 Activity,用来后面测试这个库好不好使。
 
-![](http://oriwplcze.bkt.clouddn.com/e19bd3a1e573ff06f64ff7b1a86585df.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/e19bd3a1e573ff06f64ff7b1a86585df.png)
 
 测试无所谓，实际开发的话，还请知悉 [Android 库项目开发官方文档](https://developer.android.com/studio/projects/android-library.html?hl=zh-cn),里面有给出开发注意事项，要好好听谷爹的话。
 
@@ -218,19 +218,19 @@ version    ： 三方库的版本号。
 
 这行命令的中两个参数 `BINTRAY_USERNAME`和`BINTRAY_KEY`，需要换上你自己的bintray.com 账号信息，分别是用户名和 API Key。用户名很好得到，API Key 通过下图方式，可以拿到：
 
-![](http://oriwplcze.bkt.clouddn.com/4a6010dbd5af15e6d3290a3091ad9f83.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/4a6010dbd5af15e6d3290a3091ad9f83.png)
 
 
-![](http://oriwplcze.bkt.clouddn.com/522c5e2603c7e795538c3d0b0f0f50fe.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/522c5e2603c7e795538c3d0b0f0f50fe.png)
 
 
 如果命令执行成功，会看到 `BUILD SUCCESSFUL ` 字样。
 
-![](http://oriwplcze.bkt.clouddn.com/6642c2472d06bc7dafe4755cf79ee6cb.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/6642c2472d06bc7dafe4755cf79ee6cb.png)
 
 然后去 [Bintray 网站](https://bintray.com/) 登录后，就可以看到上传的的项目了，右侧可以看到上传的版本，我测试过很多回，截止到我截图的时间已经到 1.0.6了。
 
-![](http://oriwplcze.bkt.clouddn.com/cebfe19247a8c10949fc53d55f552510.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/cebfe19247a8c10949fc53d55f552510.png)
 
 点击 Files,可查看上传的文件，如下是 1.0.6 版本上传的文件：
 
@@ -241,7 +241,7 @@ version    ： 三方库的版本号。
 | JCenterDemo-1.0.6.aar|Android 库项目的归档文件，这是必不可少的文件
 |JCenterDemo-1.0.6.pom |Maven的基础。它是一个XML文件，包含了 Maven 用来构建项目所需要的项目配置的信息,aar 是不能将库的依赖打进去的，那些依赖会记在 pom 文件中。|
 
-![](http://oriwplcze.bkt.clouddn.com/7a516c58657112fc7395153047111d9f.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/7a516c58657112fc7395153047111d9f.png)
 
 
 ### 上传过程中遇到的问题
@@ -296,16 +296,16 @@ version    ： 三方库的版本号。
 
 在第三步项目成功上传后，已经开始使用 Gradle 依赖该开源库，在 Package 页面点击 Gradle 可以看到对应的依赖命令。
 
-![](http://oriwplcze.bkt.clouddn.com/f980db82916a62d7aa9b83cfcead6b18.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/f980db82916a62d7aa9b83cfcead6b18.png)
 
 然后我试了下，发现要使用的话，会报找不到库的错误(1.0.8 的时候忘记截图了，用 1.0.14 测试的，道理是一样的，报错原因是因为找不到这个三方库)，如下图：
 
-![](http://oriwplcze.bkt.clouddn.com/fb41c7bfdd46c91aebf37f628455737f.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/fb41c7bfdd46c91aebf37f628455737f.png)
 
 
 如果想正确引用，需要将远程库所在 Repository 地址告诉 Gradle,这个地址从 Bintray 网站可以拿到，如下图：
 
-![](http://oriwplcze.bkt.clouddn.com/c1d708664f98e3c4cdc02317d2d259b4.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/c1d708664f98e3c4cdc02317d2d259b4.png)
 
 
 然后 rootProject 的 build.gradle 中添加如下内容，即可正确引用：
@@ -330,13 +330,13 @@ allprojects {
 同步的步骤非常简单，Package 详情页面有一个 ` Add to JCenter ` 按钮，点击进入，填写同步的理由，提交申请即可。通过之后会给发消息通知的。
 
 
-![](http://oriwplcze.bkt.clouddn.com/92bc14fe53ecc6a2e423e670cfe8bb7a.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/92bc14fe53ecc6a2e423e670cfe8bb7a.png)
 
-![](http://oriwplcze.bkt.clouddn.com/df37ca78703a1ed8a51debf983963516.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/df37ca78703a1ed8a51debf983963516.png)
 
 审核的速度还是非常快的，上午提交的，下午就收到了通过的站内信，如下图所示：
 
-![](http://oriwplcze.bkt.clouddn.com/84135d033403bbbff1970b09c1ed3906.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/84135d033403bbbff1970b09c1ed3906.png)
 
 
 现在已经同步到 JCenter 中央仓库，只通过一句代码引用你的第三方库啦～
@@ -365,6 +365,6 @@ allprojects {
 
 <div  align="center">    
 
-![微信公众号](http://oriwplcze.bkt.clouddn.com/qrcode_for_gh_e8f891ce77fb_258.jpg)
+![微信公众号](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/qrcode_for_gh_e8f891ce77fb_258.jpg)
 
 </div>

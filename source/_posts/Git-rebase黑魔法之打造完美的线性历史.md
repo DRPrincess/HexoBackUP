@@ -28,15 +28,15 @@ tags:
 我第一次看也不理解，没关系，先来个小例子平静先，如下图所示，有两个分支，develop 和 feature，两个分支都有了各自的提交。
 
 
-![例1分支初始示意图](http://oriwplcze.bkt.clouddn.com/d1768ce1956caa5905d3c9b7add05dc3.png)
+![例1分支初始示意图](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/d1768ce1956caa5905d3c9b7add05dc3.png)
 
 在见识到 rebase 的处女秀之前，来让我们温故而知一下，动动小手画一下普通的分支合并的示意图。嗯，这是一个很明显的策略式合并，会产生一个新的合并提交，如图：
 
-![merge 示意图](http://oriwplcze.bkt.clouddn.com/3e03b933d8569b0fed71b66ee02aed5b.png)
+![merge 示意图](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/3e03b933d8569b0fed71b66ee02aed5b.png)
 
 温故完毕，现在开始 rebase 变基的黑魔法，请瞪大你的眼睛，擦亮你的眼镜儿。
 
-![rebase 示意图](http://oriwplcze.bkt.clouddn.com/70b059fa56a970a0acaebe9649bc9e65.png)
+![rebase 示意图](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/70b059fa56a970a0acaebe9649bc9e65.png)
 
 咦？！！此刻，是否感觉有点懵懵哒？
 
@@ -99,7 +99,7 @@ git rebase master
 
 ```
 
-![](http://oriwplcze.bkt.clouddn.com/c6c9cb4917e3e27c07d49da664ab1831.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/c6c9cb4917e3e27c07d49da664ab1831.png)
 
 rebase 操作执行成功，现在 develop 分支指向的变基的最新提交，但是 master 分支的指针不变，仍然指向“master1 提交”，所以，如果需要，使用`git merge master develop`快进式合并一下，移动 master 的指针指向最新的提交。
 
@@ -113,7 +113,7 @@ rebase 操作执行成功，现在 develop 分支指向的变基的最新提交�
 来看下 rebase 前后的 develop 的分支历史，如下图，左侧是 rebase 前，右侧是 rebase 后。
 
 
-![](http://oriwplcze.bkt.clouddn.com/0a9234e8964fc3be8a38b016e4108c99.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/0a9234e8964fc3be8a38b016e4108c99.png)
 
 注意上图标识箭头的地方，对比后你会得到两个结论
 
@@ -159,6 +159,6 @@ rebase 想较于 merge 的优点就是完美的线性历史了。不扯什么分
 
 <div  align="center">    
 
-![微信公众号](http://oriwplcze.bkt.clouddn.com/qrcode_for_gh_e8f891ce77fb_258.jpg)
+![微信公众号](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/qrcode_for_gh_e8f891ce77fb_258.jpg)
 
 </div>

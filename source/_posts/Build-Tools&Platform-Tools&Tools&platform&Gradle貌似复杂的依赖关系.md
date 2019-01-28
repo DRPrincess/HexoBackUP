@@ -23,7 +23,7 @@ SDK（Soft Develop Kit），按照我硬翻的风格是是软件开发工具箱�
 
 然后就说到这三个文件夹，tools,build-tools,platform tools,首先它们仨都是 Android SDK 提供的文件夹，名字都像，常常傻傻分不清楚。
 
-![](http://oriwplcze.bkt.clouddn.com/6f3b9cc628e905e453bbfc9c2a4cd756.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/6f3b9cc628e905e453bbfc9c2a4cd756.png)
 
 其实我也不知道弄懂它们有什么意义，但是我不想每次都一脸懵逼，于是就有了这篇博客。
 
@@ -31,7 +31,7 @@ SDK（Soft Develop Kit），按照我硬翻的风格是是软件开发工具箱�
 
 Build-Tools 的内部结构如图。
 
-![](http://oriwplcze.bkt.clouddn.com/026ad2cc7bddb749806e0353b6dd9994.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/026ad2cc7bddb749806e0353b6dd9994.png)
 
 
 没想到的是，我目前使用的 SDK 中有这么多版本的 Build-Tools。那么问题就来了，
@@ -41,7 +41,7 @@ Build-Tools 的内部结构如图。
 
 这个时候，就要去看谷爹的官方介绍说明了，我认为那里是最准确的描述。
 
-![](http://oriwplcze.bkt.clouddn.com/48d618645de75387457ed5b44d1d28d4.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/48d618645de75387457ed5b44d1d28d4.png)
 
 
 上面说，Build-Tools 是 Android 应用编译和创建过程中所必须的一套工具集合。
@@ -75,7 +75,7 @@ Gradle 是目前比较流行的构建工具之一，Android Studio 中集成的�
 
 Gradle Plugin 的版本说明中，对 Gradle 和 Build Tools 的版本都要最低要求。
 
-![](http://oriwplcze.bkt.clouddn.com/c87d861724e11a954a582754d75b394e.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/c87d861724e11a954a582754d75b394e.png)
 
 把最新的几个版本总结了如下表格：
 |Android Gradle Plugin	|Gradle|Build Tools
@@ -94,13 +94,13 @@ Gradle Plugin 的版本说明中，对 Gradle 和 Build Tools 的版本都要最
 
 Platform Tools 的内部结构如图。
 
-![](http://oriwplcze.bkt.clouddn.com/8161680a135e9082a9626a89093dd366.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/8161680a135e9082a9626a89093dd366.png)
 
 本来我以为会像 Build-Tools 一样有很多版本，然而并不是，只有一个。
 
 看一下谷爹的说明：
 
-![](http://oriwplcze.bkt.clouddn.com/14d1b8cba7288104fac9be7f36a52596.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/14d1b8cba7288104fac9be7f36a52596.png)
 
 Platform-Tools 是 Android SDK 的一个组件 。内容主要包含与 Android 移动平台交互的工具，例如 adb(android 调试桥，用来和应用通信的),fastboot（线刷，一种刷机模式） 和 systrace(通过这个，可以查看分析系统运行中的所有数据)等。 这些工具堪称 Android 应用开发之必备工具。如果想解锁手机开机程序或者刷机的话，也需要它们。
 
@@ -113,7 +113,7 @@ Platform-Tools 是 Android SDK 的一个组件 。内容主要包含与 Android 
 博客最上面的图片中，可以看到 sdk 文件夹内部组成中，有这样两个文件夹，platform tools 和 platform 。从名字上看，就感觉俩货之间肯定是有事。
 Platform  内部结构如图。
 
-![](http://oriwplcze.bkt.clouddn.com/deb63b9b1a6ba160d82927ccd16e9952.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/deb63b9b1a6ba160d82927ccd16e9952.png)
 
 很明显，这就是不同版本 Android 系统们，以 API 为序号。用户下载了几个版本，里面就有几个版本。build.gradle 中 `compileSdkVersion` 参数对应的就是这其中的版本。
 
@@ -127,7 +127,7 @@ android {
 
 查看 Platform 的官方介绍，发现 Platform 的每个版本都对 Platform tools 有最低版本要求。
 
-![](http://oriwplcze.bkt.clouddn.com/542bff136f69eb2fc349699f5b48f849.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/542bff136f69eb2fc349699f5b48f849.png)
 
 从版本号看，基本保持一致，还是比较好记。例如 platform 25 就要求 platform tools 25.0.1+。
 
@@ -147,13 +147,13 @@ android {
 
 Tools 的内部结构如图。
 
-![](http://oriwplcze.bkt.clouddn.com/9f2bb4942e0326d97a4f306907cb27f4.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/9f2bb4942e0326d97a4f306907cb27f4.png)
 
 Tools 在我的环境中只有一个版本，所以按照这种规律，很明显，开发环境中应该也只需要一个版本的就足够的。
 
 以下是我们的谷爹对它的一句话介绍：
 
-![](http://oriwplcze.bkt.clouddn.com/14034b086a3edf8837900e18554e4dcc.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/14034b086a3edf8837900e18554e4dcc.png)
 
 Tools 也是 Android SDK 的一个组件，包括一套完整的 Android 开发和调试工具，Tools 也包含在 Android Studio 中。
 
@@ -162,7 +162,7 @@ Tools 也是 Android SDK 的一个组件，包括一套完整的 Android 开发�
 
 翻翻 Tools 的版本记录，发现 Tools 和 Platform 之间也有对应关系。例如下图，26.0.0 的 Tools 就依赖 Platform-Tools 24+ 。
 
-![](http://oriwplcze.bkt.clouddn.com/8f64b7484cdd07d02aa5905132e43e7a.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/8f64b7484cdd07d02aa5905132e43e7a.png)
 
 
 总结如下：
@@ -186,7 +186,7 @@ Tools 也是 Android SDK 的一个组件，包括一套完整的 Android 开发�
 
 看图更清晰一点：
 
-![](http://oriwplcze.bkt.clouddn.com/dd2642f03b10eb86cb0ff28d0435940f.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/dd2642f03b10eb86cb0ff28d0435940f.png)
 
 
 # 写在最后：
@@ -206,6 +206,6 @@ Tools 也是 Android SDK 的一个组件，包括一套完整的 Android 开发�
 
 <div  align="center">    
 
-![微信公众号](http://oriwplcze.bkt.clouddn.com/qrcode_for_gh_e8f891ce77fb_258.jpg)
+![微信公众号](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/qrcode_for_gh_e8f891ce77fb_258.jpg)
 
 </div>

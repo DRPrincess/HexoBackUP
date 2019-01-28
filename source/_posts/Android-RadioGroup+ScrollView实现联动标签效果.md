@@ -16,7 +16,7 @@ tags:
 实现的效果和下面差不多，其实，蘑菇街的商品详情也是这样实现的。
 
 
-![](http://oriwplcze.bkt.clouddn.com/ezgif.com-video-to-gif.gif)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/ezgif.com-video-to-gif.gif)
 
 
 # 实现思路
@@ -129,6 +129,6 @@ mRadioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() 
 
 <div  align="center">    
 
-![微信公众号](http://oriwplcze.bkt.clouddn.com/qrcode_for_gh_e8f891ce77fb_258.jpg)
+![微信公众号](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/qrcode_for_gh_e8f891ce77fb_258.jpg)
 
 </div>

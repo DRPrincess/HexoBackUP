@@ -46,7 +46,7 @@ Mac ：Terminal 或者 iTerm2
 Windows :(Windows+R) cmd
 
 例如：   
-![git](http://oriwplcze.bkt.clouddn.com/0746bfbf47dd418ae9e8488867773719.png)
+![git](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/0746bfbf47dd418ae9e8488867773719.png)
 
 Mac 系统默认下载了git，Windows系统不会，所以 Windows 用户要自己去 [Git 官网](https://git-scm.com/)下载
 

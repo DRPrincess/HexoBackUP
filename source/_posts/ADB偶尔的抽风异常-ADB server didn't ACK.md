@@ -57,7 +57,7 @@ error: cannot connect to daemon
 3.如果点击绿色小图标，就可以点击下载更新了。
 
 
-![](http://oriwplcze.bkt.clouddn.com/f07026cf95ef82c9a36caded91c3930b.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/f07026cf95ef82c9a36caded91c3930b.png)
 
 
 ### sdkmanager 命令行更新 platform-tools
@@ -80,7 +80,7 @@ sdkmanager 是 Android SDK 提供的一个命令行工具，可以查看，安�
 
 下面用命令更新了 Tools 的最新版本：
 
-![](http://oriwplcze.bkt.clouddn.com/b1ed860e7fda74b21d35d8a42d841a2d.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/b1ed860e7fda74b21d35d8a42d841a2d.png)
 
 
 ### 手动升级 platform-tools
@@ -89,7 +89,7 @@ sdkmanager 是 Android SDK 提供的一个命令行工具，可以查看，安�
 
   2.去 SDK 文件夹中替换 platform-tools 文件夹。
 
-  ![](http://oriwplcze.bkt.clouddn.com/7a3b38112e57b8e8411a2782758e9435.png)
+  ![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/7a3b38112e57b8e8411a2782758e9435.png)
 
 ---
 
@@ -97,6 +97,6 @@ sdkmanager 是 Android SDK 提供的一个命令行工具，可以查看，安�
 
   <div  align="center">    
 
-  ![微信公众号](http://oriwplcze.bkt.clouddn.com/qrcode_for_gh_e8f891ce77fb_258.jpg)
+  ![微信公众号](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/qrcode_for_gh_e8f891ce77fb_258.jpg)
 
   </div>

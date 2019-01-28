@@ -29,7 +29,7 @@ date: 2018-05-27 11:52:00
 
 首先构建一个如下的布局：
 
-![](http://oriwplcze.bkt.clouddn.com/1995f827c402788af7566e7b0c7b9514.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/1995f827c402788af7566e7b0c7b9514.png)
 
 
 代码中，给 RadioGroup 设置监听事件，事件中打印日志。
@@ -327,7 +327,7 @@ private class CheckedStateTracker implements CompoundButton.OnCheckedChangeListe
 
 以上连续跳来跳去的源码探寻结束，让我们简单梳理一下思路。
 
-![](http://oriwplcze.bkt.clouddn.com/dd1641408ffa2ace4d98f8cc84e52473.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/dd1641408ffa2ace4d98f8cc84e52473.png)
 
 得出一个小结论：   
 check() 方法中调用了两个方法 `setCheckedStateForView`  和`setCheckedId`,两者都会触发一次 `onCheckedChanged()`。
@@ -464,6 +464,6 @@ public void check(@IdRes int id) {
 
 <div  align="center">    
 
-![微信公众号](http://oriwplcze.bkt.clouddn.com/qrcode_for_gh_e8f891ce77fb_258.jpg)
+![微信公众号](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/qrcode_for_gh_e8f891ce77fb_258.jpg)
 
 </div>

@@ -67,7 +67,7 @@ Hotfix 分支是用来做线上的紧急 bug 修复的分支,建议命名为 hot
 
 下面是对比图，左侧是加上参数的，后者是普通的提交：
 
-![](http://oriwplcze.bkt.clouddn.com/4bf39a7e3f8cfcff2f2320cc632adb80.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/4bf39a7e3f8cfcff2f2320cc632adb80.png)
 
 
 ### Git Flow 示意图
@@ -75,7 +75,7 @@ Hotfix 分支是用来做线上的紧急 bug 修复的分支,建议命名为 hot
 
 下面这张图，我在刚学习 Git 的时候，看到很多次这个图，然并卵，一直都没看懂过，也不知道这张图来自 Git Flow ，只能说，我当初学 Git 的方式的确不怎么认真和系统 。好在，我现在已经能看明白了这个图，并且还写了个博客，不得不感叹，时光真是好神奇，让人都遇到不一样的自己。
 
-![](http://oriwplcze.bkt.clouddn.com/f2a8e2be7b4515665137cc295d6347a5.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/f2a8e2be7b4515665137cc295d6347a5.png)
 
 
 图中画了 Git Flow 的五种分支，master，develop，feature branchs ,release branchs , hoxfixes，其中 master 和 develop  字体被加粗代表主要分支。master 分支每合并一个分支，无论是 hotfix 还是 release ,都会打一个版本标签。通过箭头可以清楚的看到分支的开始和结束走向，例如 feature 分支从 develop 开始，最终合并回 develop ，hoxfixes 从 master 检出创建，最后合并回 develop 和 master，master 也打上了标签。
@@ -94,7 +94,7 @@ GitHub Flow 是大型程序员交友社区 GitHub 制定并使用的工作流模
 
 对比上面那张 Git flow 分支模型图，真的可以称得上简单明了啦，因为 GitHub Flow 推荐做法是只有一个主分支 master，团队成员们的分支代码通过 pull Request 来合并到 master 上。
 
-![github flow 示意图](http://oriwplcze.bkt.clouddn.com/46e70c0bb557565b2fdcc1e5e4efefce.png)
+![github flow 示意图](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/46e70c0bb557565b2fdcc1e5e4efefce.png)
 
 ### GitHub Flow 模型简单说明
 
@@ -129,7 +129,7 @@ GitHub Flow 是大型程序员交友社区 GitHub 制定并使用的工作流模
 
   如果你是一个项目维护者，除了标记 issue 的开启和关闭，还可以给它标记上不同的标签，来优化项目。当提交的时候，如果提交信息中有 `fix #1` 等字段，可以自动关闭对应编号的 issue。
 
-![issue 标签](http://oriwplcze.bkt.clouddn.com/6ff2072c100a4dd7cb5711a92ba66ddf.png)
+![issue 标签](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/6ff2072c100a4dd7cb5711a92ba66ddf.png)
 
 
 
@@ -167,7 +167,7 @@ GitHub Flow 的出现，非常大程度上简化了 Git Flow ，因为只有一�
 
 master 分支不够，于是添加了一个 prodution 分支，专门用来发布版本。
 
-![产品发布分支](http://oriwplcze.bkt.clouddn.com/a9f64b7f1c4ff1a77b091671be5f1a61.png)
+![产品发布分支](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/a9f64b7f1c4ff1a77b091671be5f1a61.png)
 
 
 
@@ -178,7 +178,7 @@ master 分支不够，于是添加了一个 prodution 分支，专门用来发�
 这里要注意，代码合并的顺序，要按环境依次推送，确保代码被充分测试过,才会从上游分支合并到下游分支。除非是很紧急的情况，才允许跳过上游分支，直接合并到下游分支。这个被定义为一个规则，名字叫 “upstream first”，翻译过来是 “上游优先”。
 
 
-![部署环境分支](http://oriwplcze.bkt.clouddn.com/5e29f2d31e0e1ac1fdc91108cefb17a2.png)
+![部署环境分支](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/5e29f2d31e0e1ac1fdc91108cefb17a2.png)
 
 #### 版本发布分支--Release Branches & Upstream First
 
@@ -189,7 +189,7 @@ master 分支不够，于是添加了一个 prodution 分支，专门用来发�
 
 在 GitLab Flow ，建议的做法是每一个稳定版本，都要从master分支拉出一个分支，比如2-3-stable、2-4-stable等等。发现问题，就从对应版本分支创建修复分支，完成之后，先合并到 master，才能再合并到 release 分支，遵循 “上游优先” 原则。
 
-![版本发布分支](http://oriwplcze.bkt.clouddn.com/e83dbbe742474c6c9af4ce293a4cface.png)
+![版本发布分支](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/e83dbbe742474c6c9af4ce293a4cface.png)
 
 
 # 最后
@@ -213,6 +213,6 @@ GitHub Flow 和 GitLab Flow 的介绍很多都是来源于各自的英文介绍�
 
 <div  align="center">    
 
-![微信公众号](http://oriwplcze.bkt.clouddn.com/qrcode_for_gh_e8f891ce77fb_258.jpg)
+![微信公众号](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/qrcode_for_gh_e8f891ce77fb_258.jpg)
 
 </div>

@@ -23,10 +23,10 @@ tags:
 
 通过 echo 命令给 master.txt 文件加了一行内容，然后执行提交：
 
-![不 add 就 commit 的测试](http://oriwplcze.bkt.clouddn.com/3b3d9cc8226b1b18cdf6c5914d9ed4b8.png)
+![不 add 就 commit 的测试](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/3b3d9cc8226b1b18cdf6c5914d9ed4b8.png)
 
 
-![](http://oriwplcze.bkt.clouddn.com/4d3f34127fce833b801ace49de19421c.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/4d3f34127fce833b801ace49de19421c.png)
 
 测试结果很明显，commit 失败，失败原因是没有可以提交的修改,然而奇怪的是，查看 master.txt 文件，内容却已经添加成功。
 好在 Git 非常贴心的给了我们详细的错误说明，下面仔细看一下：
@@ -73,7 +73,7 @@ Git 本地数据管理，大概可以分为三个区，工作区,暂存区和版
 
 下面是，当开发者通过 git 修改数据时，各区之间的数据传递流程示意图。
 
-![git 数据流程图示意图](http://oriwplcze.bkt.clouddn.com/2429e4d2661e60027537aea0077f6e40.png)
+![git 数据流程图示意图](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/2429e4d2661e60027537aea0077f6e40.png)
 
 为了验证以上流程的正确性，我们可以自己动手实验一下，为了对比三个区之间的数据差别，过程中，可以借助神奇的 diff 命令。
 
@@ -86,39 +86,39 @@ Git 本地数据管理，大概可以分为三个区，工作区,暂存区和版
 现在三个区的数据是一致的，执行 git diff 命令都为空
 |命令|接果|
 |---|---|
-|（工作区 vs 暂存区）git diff |![](http://oriwplcze.bkt.clouddn.com/805899178327987c785580f569efc8a1.png)|
-|（工作区 vs 版本库）git diff head|![](http://oriwplcze.bkt.clouddn.com/805899178327987c785580f569efc8a1.png)|
-|（暂存区 vs 版本库）git diff --cached|![](http://oriwplcze.bkt.clouddn.com/805899178327987c785580f569efc8a1.png)|
+|（工作区 vs 暂存区）git diff |![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/805899178327987c785580f569efc8a1.png)|
+|（工作区 vs 版本库）git diff head|![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/805899178327987c785580f569efc8a1.png)|
+|（暂存区 vs 版本库）git diff --cached|![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/805899178327987c785580f569efc8a1.png)|
 
 然后给 master.txt 添加一行内容后，现在工作区内容发生变化，暂存区和版本库内容不变。
-![](http://oriwplcze.bkt.clouddn.com/4b5f4d1382948420956683d65d323271.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/4b5f4d1382948420956683d65d323271.png)
 
 |命令|接果|
 |---|---|
-|（工作区 vs 暂存区）git diff |![](http://oriwplcze.bkt.clouddn.com/47125eec79eea756b08c57f1673d0275.png)|
-|（工作区 vs 版本库）git diff head|![](http://oriwplcze.bkt.clouddn.com/daca76543e05a93a4539544b6cfa037c.png)|
-|（暂存区 vs 版本库）git diff --cached|![](http://oriwplcze.bkt.clouddn.com/805899178327987c785580f569efc8a1.png)|
+|（工作区 vs 暂存区）git diff |![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/47125eec79eea756b08c57f1673d0275.png)|
+|（工作区 vs 版本库）git diff head|![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/daca76543e05a93a4539544b6cfa037c.png)|
+|（暂存区 vs 版本库）git diff --cached|![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/805899178327987c785580f569efc8a1.png)|
 
 
 
 
 执行git add 操作后，修改同步到暂存区，现在工作区和暂存区数据一致。
-![](http://oriwplcze.bkt.clouddn.com/80084f3335343b6f2e3400582df2147c.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/80084f3335343b6f2e3400582df2147c.png)
 |命令|接果|
 |---|---|
-|（工作区 vs 暂存区）git diff |![](http://oriwplcze.bkt.clouddn.com/805899178327987c785580f569efc8a1.png)|
-|（工作区 vs 版本库）git diff head|![](http://oriwplcze.bkt.clouddn.com/daca76543e05a93a4539544b6cfa037c.png)|
-|（暂存区 vs 版本库）git diff --cached|![](http://oriwplcze.bkt.clouddn.com/daca76543e05a93a4539544b6cfa037c.png)|
+|（工作区 vs 暂存区）git diff |![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/805899178327987c785580f569efc8a1.png)|
+|（工作区 vs 版本库）git diff head|![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/daca76543e05a93a4539544b6cfa037c.png)|
+|（暂存区 vs 版本库）git diff --cached|![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/daca76543e05a93a4539544b6cfa037c.png)|
 
 
 执行 git commit 操作后，修改已经同步到版本库，三区数据再次保持一致。
-![](http://oriwplcze.bkt.clouddn.com/018cb4ce2a6582ae743f9262aca73f5f.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/018cb4ce2a6582ae743f9262aca73f5f.png)
 
 |命令|接果|
 |---|---|
-|（工作区 vs 暂存区）git diff |![](http://oriwplcze.bkt.clouddn.com/805899178327987c785580f569efc8a1.png)|
-|（工作区 vs 版本库）git diff head|![](http://oriwplcze.bkt.clouddn.com/805899178327987c785580f569efc8a1.png)|
-|（暂存区 vs 版本库）git diff --cached|![](http://oriwplcze.bkt.clouddn.com/805899178327987c785580f569efc8a1.png)|
+|（工作区 vs 暂存区）git diff |![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/805899178327987c785580f569efc8a1.png)|
+|（工作区 vs 版本库）git diff head|![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/805899178327987c785580f569efc8a1.png)|
+|（暂存区 vs 版本库）git diff --cached|![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/805899178327987c785580f569efc8a1.png)|
 
 # Stage 赋予 Git 更多灵活性
 
@@ -156,6 +156,6 @@ Git 本地数据管理，大概可以分为三个区，工作区,暂存区和版
 
 <div  align="center">    
 
-![微信公众号](http://oriwplcze.bkt.clouddn.com/qrcode_for_gh_e8f891ce77fb_258.jpg)
+![微信公众号](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/qrcode_for_gh_e8f891ce77fb_258.jpg)
 
 </div>

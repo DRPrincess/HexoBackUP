@@ -27,7 +27,7 @@ Git 官方君给出的文档非常全面，除文档外，还有很多很多学�
 [《Pro Git》中文版 >GO!](https://git-scm.com/book/zh/v2) 《Pro Git》，强烈推荐，几乎学 Git 的必备书籍！
 
 
-![](http://oriwplcze.bkt.clouddn.com/7384b5deeac378d6914ad9b6e6a1dd92.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/7384b5deeac378d6914ad9b6e6a1dd92.png)
 
 
 [Git 全部命令的索引文档  >GO!](https://git-scm.com/docs)，新华字典般的存在，不用专门去看它，不会即查。
@@ -36,7 +36,7 @@ Git 官方君给出的文档非常全面，除文档外，还有很多很多学�
 
 
 
-![](http://oriwplcze.bkt.clouddn.com/fe3db15699af08c93608b7bee882b8cb.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/fe3db15699af08c93608b7bee882b8cb.png)
 # 大牛们的 Git 系列
 
 官网上的资料很全，但是大多是英语，就算翻译成中文，也特别书面化，所以很多人刚开始就去官方看的话，会感觉特别枯燥无味，看不下去。对于这种情况的，推荐看国内大牛们写的博客们，十分口语化，所以通俗易懂。
@@ -49,7 +49,7 @@ Git 官方君给出的文档非常全面，除文档外，还有很多很多学�
 
 此电子书是一本掘金小册，需要付费阅读,我看过，完全物超所值，初级和高级都比较适合阅读，个人十分推荐。
 
-![](http://oriwplcze.bkt.clouddn.com/c1434824e25e1f7892d219da4cd16177.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/c1434824e25e1f7892d219da4cd16177.png)
 
 
 
@@ -60,14 +60,14 @@ Git 官方君给出的文档非常全面，除文档外，还有很多很多学�
 
 这个教程放在廖雪峰的个人网站上，是众教程之一，质量依然有保证，对比上面而言，嗯，是免费的。
 
-![](http://oriwplcze.bkt.clouddn.com/5b08123628f25c33f71e0422912d34dd.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/5b08123628f25c33f71e0422912d34dd.png)
 
 ----
 geeeeeeeeek的[《git-recipes》](https://github.com/geeeeeeeeek/git-recipes)
 
 一位仁兄自己整理的高质量 Git 中文教程，放在了 GitHub 上，star数有6K+。star数直接体现出它的价值，不多说，娃子们可以自己去看。
 
-![](http://oriwplcze.bkt.clouddn.com/d99ae669c35657fa2cabb268c685e405.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/d99ae669c35657fa2cabb268c685e405.png)
 
 
 
@@ -100,6 +100,6 @@ geeeeeeeeek的[《git-recipes》](https://github.com/geeeeeeeeek/git-recipes)
 
 <div  align="center">    
 
-![微信公众号](http://oriwplcze.bkt.clouddn.com/qrcode_for_gh_e8f891ce77fb_258.jpg)
+![微信公众号](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/qrcode_for_gh_e8f891ce77fb_258.jpg)
 
 </div>

@@ -232,6 +232,6 @@ mEditText.setFilters(new InputFilter[]{new MoneyValueFilter().setDigits(3)});
 
 <div  align="center">    
 
-![微信公众号](http://oriwplcze.bkt.clouddn.com/836a36d6a91d859428783f8ea2ce85d7.png)
+![微信公众号](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/836a36d6a91d859428783f8ea2ce85d7.png)
 
 </div>

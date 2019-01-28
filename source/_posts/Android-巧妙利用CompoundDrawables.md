@@ -14,10 +14,10 @@ tags:
 
 1. 用RadioGroup 方式实现需求是最方便的，图片可以用 RadioButton 的 DrawableTop 添加。
 
-![](http://oriwplcze.bkt.clouddn.com/e01f1827481a88152f4f338cb893daf9.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/e01f1827481a88152f4f338cb893daf9.png)
 
 2. 放大镜小图标通过 EditText 的 DrawableLeft 方式实现。
-![](http://oriwplcze.bkt.clouddn.com/d56c74ce052bab62dac4972c99a4fdc5.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/d56c74ce052bab62dac4972c99a4fdc5.png)
 
 以上的需求有多种方式可以实现，但在我看来，对于提示性的小图标，View&View.setCompoundDrawables()的实现方式，明显优于 View+ImageView。
 
@@ -84,6 +84,6 @@ drawable.setBounds(0, 0,  width, height);
 
 <div  align="center">    
 
-![微信公众号](http://oriwplcze.bkt.clouddn.com/qrcode_for_gh_e8f891ce77fb_258.jpg)
+![微信公众号](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/qrcode_for_gh_e8f891ce77fb_258.jpg)
 
 </div>

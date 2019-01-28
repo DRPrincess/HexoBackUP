@@ -11,7 +11,7 @@ tags:
 
 在之前的博客中，多次提到了 HEAD，例如这个从 讲分支那篇博客扒出来的图：
 
-![深层次的分支概念图](http://oriwplcze.bkt.clouddn.com/f299bd7aeadd9d4b6a57dd5134b8b69a.png)
+![深层次的分支概念图](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/f299bd7aeadd9d4b6a57dd5134b8b69a.png)
 
 我一直认为它是一个指向当前分支的指针，但是这两天看扔物线大神的 [Git 原理详解及实用指南](https://juejin.im/book/5a124b29f265da431d3c472e) 的时候，突然之前，我对这个 HEAD 指针有了不一样的看法。
 
@@ -28,12 +28,12 @@ tags:
 
 打开`.git`，可看到如下内容：
 
-![](http://oriwplcze.bkt.clouddn.com/169f15d6d29b199d8d6d2e1d10225421.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/169f15d6d29b199d8d6d2e1d10225421.png)
 
 
 `.git` 文件中存储 Git 对这个项目进行版本控制的所有信息，其他的先不说，小伙伴们，你们有没有发现重点?,有一个大写没加粗的 `HEAD` 文件！赶紧打开看看：
 
-![](http://oriwplcze.bkt.clouddn.com/fc272aee260b1ba46030e1c845594cb0.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/fc272aee260b1ba46030e1c845594cb0.png)
 
 
 HEAD 文件的内容，是指向了另一个文件的应用，于是找的  `refs/heads/master` 打开,诡异的是，这个文件根本不存在，因为我刚刚对这个项目进行版本管理，此时，无任何提交，什么分支都不存在，master 分支是 git 的默认分支，所以会指向它。
@@ -46,13 +46,13 @@ HEAD 文件的内容，是指向了另一个文件的应用，于是找的  `ref
 
 刚刚创建的项目没有版本管理的历史，现在创建几个提交和分支，然后切换分支看一下 HEAD 的内容。
 
-![](http://oriwplcze.bkt.clouddn.com/fc272aee260b1ba46030e1c845594cb0.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/fc272aee260b1ba46030e1c845594cb0.png)
 
-![](http://oriwplcze.bkt.clouddn.com/455d1434db2f707e17ec5e36fc9534c2.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/455d1434db2f707e17ec5e36fc9534c2.png)
 
 很熟悉的一大串数字，很像 commit 的 SHA1 值。我们通过 `git log ` 查看，发现是 master 分支最新的提交。
 
-![](http://oriwplcze.bkt.clouddn.com/606427e4e7bfc23675d4430016174570.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/606427e4e7bfc23675d4430016174570.png)
 
 目前 HEAD 文件指向的内容是传递顺序是这样的：
 
@@ -69,24 +69,24 @@ HEAD 文件的内容，是指向了另一个文件的应用，于是找的  `ref
 
 解释以上问题，需要知道 `refs/heads/` 文件夹存储的内容是当前项目所有分支的头指针，每个分支的头指针都指向该分支的最新提交。
 
-![](http://oriwplcze.bkt.clouddn.com/9cb66f88f3fa5d0bd293c6be297d33da.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/9cb66f88f3fa5d0bd293c6be297d33da.png)
 
-![](http://oriwplcze.bkt.clouddn.com/b3d6dfdd3e970698d2323710e61744d6.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/b3d6dfdd3e970698d2323710e61744d6.png)
 
-![](http://oriwplcze.bkt.clouddn.com/455d1434db2f707e17ec5e36fc9534c2.png)
-![](http://oriwplcze.bkt.clouddn.com/22b34bf181e1a004264285574bf82264.png)
-![](http://oriwplcze.bkt.clouddn.com/3b7c469e240c5fef9fcd905ef8671ce9.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/455d1434db2f707e17ec5e36fc9534c2.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/22b34bf181e1a004264285574bf82264.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/3b7c469e240c5fef9fcd905ef8671ce9.png)
 
 
 从上图看，三个分支的头指针指向的提交都不同，HEAD直接指向提交毫无问题。
 
 但是此时出现一个 dev 分支，刚从 master 检出，头指针和 master 相同，HEAD直接指向提交的话，怎么知道，当前工作分支是 master  还是 dev 呢？
 
-![](http://oriwplcze.bkt.clouddn.com/c4405eb93ef8be792450fe7994759142.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/c4405eb93ef8be792450fe7994759142.png)
 
 此时 HEAD 文件的内容就非常有意义了：
 
-![](http://oriwplcze.bkt.clouddn.com/35c87f70da0eb3fa6cfc661075443eb3.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/35c87f70da0eb3fa6cfc661075443eb3.png)
 
 所以，HEAD 通过先指向分支的头指针，再指向提交的意义就是表明当前所处的分支。
 
@@ -98,11 +98,11 @@ HEAD 文件的内容，是指向了另一个文件的应用，于是找的  `ref
 使用 `git checkout <commit id>` 成功的进入了
 `detached HEAD` 状态：
 
-![](http://oriwplcze.bkt.clouddn.com/bb694924624d1c87bccb61f0faec20c3.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/bb694924624d1c87bccb61f0faec20c3.png)
 
 此时的 HEAD 文件内容，不再指向分支的头指针，而是直接指向了提交。
 
-![](http://oriwplcze.bkt.clouddn.com/eef40ab691b5ee9d3c1dfd6bfe86ec64.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/eef40ab691b5ee9d3c1dfd6bfe86ec64.png)
 
 得出结论，当 HEAD 指针直接指向提交时，就会导致 `detached HEAD` 状态。在这个状态下，如果创建了新提交，新提交不属于任何分支。相对应的，现存的所有分支也不会受 `detached HEAD` 状态提交的影响。
 
@@ -130,19 +130,19 @@ git checkout --detach
 
 例如：有一天，灵感突来，我打开了`.git`,发现多了 `FERCH_HEAD` 和 `ORIG_HEADORIG_HEAD`。
 
-![](http://oriwplcze.bkt.clouddn.com/6164f9cad87ce0fc708aecc68697cad9.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/6164f9cad87ce0fc708aecc68697cad9.png)
 
 
 
 再例如：当合并冲突的时候，打开会发现 `MERGE_HEAD`。
 
-![MERGE_HEAD存在情况](http://oriwplcze.bkt.clouddn.com/224bd5dbb9e2542da45184fed0de9e19.png)
+![MERGE_HEAD存在情况](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/224bd5dbb9e2542da45184fed0de9e19.png)
 
 
 
 再再例如：执行 cherry-pick 命令合并 commits 时,会出现 `CHERRY_PICK_HEAD`。
 
-![CHERRY_PICK_HEAD存在情况](http://oriwplcze.bkt.clouddn.com/fa8253f1d6443c48f01b66e6148309ea.png)
+![CHERRY_PICK_HEAD存在情况](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/fa8253f1d6443c48f01b66e6148309ea.png)
 
 
 
@@ -177,6 +177,6 @@ git checkout --detach
 
  <div  align="center">    
 
- ![微信公众号](http://oriwplcze.bkt.clouddn.com/qrcode_for_gh_e8f891ce77fb_258.jpg)
+ ![微信公众号](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/qrcode_for_gh_e8f891ce77fb_258.jpg)
 
  </div>

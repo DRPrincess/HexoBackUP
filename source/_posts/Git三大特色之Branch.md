@@ -22,18 +22,18 @@ tags:
 
 Git 的分支，就是开发过程中，要选择的一条路，你可以选择和其他小伙伴一起走同一条路，也可以自己走一条路，路与路之间相互没有影响，作为路的主人，你也随时可以让两条路合并。  
 
-![简笔画 Git 分支](http://oriwplcze.bkt.clouddn.com/5ed60a497b23ce3d7c07f58be2101119.png)
+![简笔画 Git 分支](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/5ed60a497b23ce3d7c07f58be2101119.png)
 
 **深入一点的话，是这么个概念**：  
 
 Git 的分支，其实本质上仅仅是指向提交对象的可变指针，这个可变指针，指向路的终点。同时，还有一个比较特别的 HEAD 指针，用于记录当前工作的位置，借用上面的例子，这个 HEAD  指针等于在路上走的你自己，你在哪，指针就在哪，你在哪个分支，HEAD 指针就指向哪个分支的指针。
-![深层次的分支概念图](http://oriwplcze.bkt.clouddn.com/f299bd7aeadd9d4b6a57dd5134b8b69a.png)
+![深层次的分支概念图](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/f299bd7aeadd9d4b6a57dd5134b8b69a.png)
 
 实际上，当我们使用 Git 的时候，我们就使用了分支，因为 Git 的默认分支名字是 master，如果你有心的话，会发现执行 `git init`后，命令行的输出头部已经默认在 master 分支了。 但是这个时候，还并未创建 master 分支，只有当有一个提交的时候，才会创建 master 分支。原因在于，分支的指针要指向提交的呀，突然明白了，当初看 Android Studio 的教程，为什么每个都让有一个初步提交了呢。
 
 无图无真相，不信的看下面:
 
-![git 默认分支 master](http://oriwplcze.bkt.clouddn.com/394ad5a842d71bf61fef4f5d856106d0.png)
+![git 默认分支 master](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/394ad5a842d71bf61fef4f5d856106d0.png)
 
 
 
@@ -138,7 +138,7 @@ git merge <branch name>
 
 - **Fast-Forward（快进式）**  
 
-![](http://oriwplcze.bkt.clouddn.com/324432d185358af6518b4a650bc981bd.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/324432d185358af6518b4a650bc981bd.png)
 
 
 如图，有两个分支，master 分支和 feature 分支。当这两个分支处于上面的关系时，当进行合并操作时，就会出现 fast-forward。
@@ -147,7 +147,7 @@ git merge <branch name>
 
 合并后的分支指针位置如下：
 
-![](http://oriwplcze.bkt.clouddn.com/d0ab779b06b91838f5d9c508fc0b5de0.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/d0ab779b06b91838f5d9c508fc0b5de0.png)
 
 
 
@@ -158,12 +158,12 @@ git merge <branch name>
 
 
 
-![](http://oriwplcze.bkt.clouddn.com/27598a97785cab054c679bc3e8d19a48.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/27598a97785cab054c679bc3e8d19a48.png)
 
 
  因为，master 分支所在提交并不是 feature 分支所在提交的直接祖先，Git 不得不做一些额外的工作。 出现这种情况的时候，Git 会使用两个分支的末端所指的快照（C4 和 C5）以及这两个分支的工作祖先（C3），做一个简单的三方合并,生成一个新的提交（C6）。
 
-![](http://oriwplcze.bkt.clouddn.com/dc48051b9659fb4f5ec7d097f75ef033.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/dc48051b9659fb4f5ec7d097f75ef033.png)
 
 
 
@@ -211,28 +211,28 @@ git merge featureB
 
 master 分支合并 featureA 时，是快进式合并：
 
-![](http://oriwplcze.bkt.clouddn.com/43bf2b61c937e26dc9eb3c824ae35bc4.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/43bf2b61c937e26dc9eb3c824ae35bc4.png)
 
 
 master 分支合并 featureA 后， 再合并 featureB  时，已经不满足快进式条件了，此时合并会触发一个三方合并，产生一个新的提交。所以，执行合并命令，会跳到下面的页面，让我们编辑这个新提交的提交信息，默认提交信息是“Merge branch 'branch name'”. 按 `i `编辑提交信息, `:wq!`保存并退出页面。
 
-![](http://oriwplcze.bkt.clouddn.com/37aceb9e7535ffd8fb58f9a9c30eccb0.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/37aceb9e7535ffd8fb58f9a9c30eccb0.png)
 
 合并成功后的提示信息：
 
-![](http://oriwplcze.bkt.clouddn.com/79a77b7ee3730d15c2f081aa2cb559a6.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/79a77b7ee3730d15c2f081aa2cb559a6.png)
 
 
 
 画出上面小例子的分支合并，示意图，如下：
 
 
-![master 合并 featureA](http://oriwplcze.bkt.clouddn.com/ca195af0af9d30e162c4d9a3a96a68eb.png)
+![master 合并 featureA](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/ca195af0af9d30e162c4d9a3a96a68eb.png)
 
 
 
 
-![master 合并 featureB](http://oriwplcze.bkt.clouddn.com/8197401e03adab46deb4c3b33566ced6.png)
+![master 合并 featureB](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/8197401e03adab46deb4c3b33566ced6.png)
 
 
 # 和平解决 Branch 合并冲突
@@ -240,11 +240,11 @@ master 分支合并 featureA 后， 再合并 featureB  时，已经不满足快
 有人在的地方就有江湖，有分支在的地方，就有冲突。有时候合并操作不会如此顺利。 如果你在两个不同的分支中，对同一个文件的同一个部分进行了不同的修改，Git 就没法干净的合并它们，于是就会发生冲突。
 
 如下，分别在 master 和 featureA ，在 master.txt 文件第一行添加一句话，然后两个分支合并，就会发生冲突。
-![](http://oriwplcze.bkt.clouddn.com/75b4d6e9d33af945fd96e4e7a8ef1fe7.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/75b4d6e9d33af945fd96e4e7a8ef1fe7.png)
 
 冲突提示信息中，指明冲突文件为 master.txt。同时，也可以通过 `git status` 命令，查看冲突的详细信息
 
-![](http://oriwplcze.bkt.clouddn.com/cfb0429b5ff5b85998abc8dc509412fa.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/cfb0429b5ff5b85998abc8dc509412fa.png)
 
 
 需要说明的是，如果遇到冲突的话，git 就无法自动合并了，接下来要靠我们自己手动解决冲突，方法是：
@@ -258,7 +258,7 @@ master 分支合并 featureA 后， 再合并 featureB  时，已经不满足快
 
 冲突文件 master.txt 如下，git 虽然无法解决冲突， 但是已经帮我们帮到最后了，使用简单的三个符号，标明了冲突的地方，以及冲突的两个分支在该地方发生冲突内容。
 
-![](http://oriwplcze.bkt.clouddn.com/9a217024b190f163bf51dc70475c7a6e.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/9a217024b190f163bf51dc70475c7a6e.png)
 
 
 |符号|意义|
@@ -271,7 +271,7 @@ master 分支合并 featureA 后， 再合并 featureB  时，已经不满足快
 接下来编辑 master.txt  文件,完成合并，确认之后，把 git 冲突标识符号给删除掉即可。
 
 #### 第二步 & 第三步：修改后冲突文件，add &&  commit
-![](http://oriwplcze.bkt.clouddn.com/5b9ee07c5dbcc1fb3d637bbdee9b047a.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/5b9ee07c5dbcc1fb3d637bbdee9b047a.png)
 
 
 
@@ -316,6 +316,6 @@ git push origin <name> //用回滚后的本地分支重新建立远程分支
 
 <div  align="center">    
 
-![微信公众号](http://oriwplcze.bkt.clouddn.com/qrcode_for_gh_e8f891ce77fb_258.jpg)
+![微信公众号](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/qrcode_for_gh_e8f891ce77fb_258.jpg)
 
 </div>

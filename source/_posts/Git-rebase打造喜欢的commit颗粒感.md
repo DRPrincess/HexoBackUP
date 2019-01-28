@@ -27,7 +27,7 @@ git rebase -i HEAD^^^
 
 一个 enter 按下去，就开启了黑暗世界,进入了 rebase 交互的页面，如下图：
 
-![](http://oriwplcze.bkt.clouddn.com/83501cee8c23ee4b71e878eed2fcb2d9.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/83501cee8c23ee4b71e878eed2fcb2d9.png)
 
 从这张图中，你可以分两个部分看：  
 1. 主要内容：选定的提交们，以及对它们的处理。  
@@ -65,16 +65,16 @@ git rebase -i HEAD^^^
 
 需要明白的是，编辑区默认的提交顺排列序是按提交历史上的顺序排列的，由前到后，顺序执行，所以顺序不要颠倒。不然你想想，改完最后一个提交之后，再修改第一个提交，历史都散开不能串成一串了。
 
-![](http://oriwplcze.bkt.clouddn.com/23085c5bc1ef65b12f3799eb74e1ae14.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/23085c5bc1ef65b12f3799eb74e1ae14.png)
 
-![](http://oriwplcze.bkt.clouddn.com/fbdcb9e57e16df5c30b84888ba7076d8.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/fbdcb9e57e16df5c30b84888ba7076d8.png)
 
 
 第二步：确定执行  
 
 保存退出交互页面就开始执行 rebase 了。顺利的话，直接执行成功，发生冲突，解决之后，执行 `git rebase --continue`继续进行，直至执行成功。
 
-![](http://oriwplcze.bkt.clouddn.com/ce9168ec8f5e99dde4b8c6773c6d908d.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/ce9168ec8f5e99dde4b8c6773c6d908d.png)
 
 
 # 小例子：用 reword 和 fixup 打磨提交颗粒
@@ -84,14 +84,14 @@ git rebase -i HEAD^^^
 
 因为真实开发中，我看到太多没有一点意义提交了，放张我刚翻出来的截图，这是远程仓库中一个项目的部分提交历史。
 
-![](http://oriwplcze.bkt.clouddn.com/8aaa34dd181cc78e312824a7bc4808c2.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/8aaa34dd181cc78e312824a7bc4808c2.png)
 
 我几乎能想象出当初娃子写推送的烦躁感，虽然很好玩，但是这个提交毫无意义，看的人，根本不知道你提交了些什么，非常不利于后期维护。合理的做法是，推动在远程之前，现在在自己的本地分支上把提交历史理清楚。
 
 
 例如下图，就可以用 `reword `和 `fixup` 命令完成从前到后的变化。
 
-![](http://oriwplcze.bkt.clouddn.com/1dc954ff48cc92c871c8baa574c8211c.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/1dc954ff48cc92c871c8baa574c8211c.png)
 
 下面开始构建测试场景
 ```
@@ -135,12 +135,12 @@ git commit -m "修复了2个bug"
 git rebase -i HEAD^^^
 ```
 
-![](http://oriwplcze.bkt.clouddn.com/3d90dfdc1505939e060f788c69d1bef3.png)
-![](http://oriwplcze.bkt.clouddn.com/7540658dc8ed1940d6f43c6735020635.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/3d90dfdc1505939e060f788c69d1bef3.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/7540658dc8ed1940d6f43c6735020635.png)
 
 执行成功，现在通过 `git log`查看操作分支的历史，和操作前的对比，确认已经成功整理了 commit 历史，大功告成！同时也注意到 `rebase` 后的提交 SHA1 值发生变化，证明是一个新的提交。
 
-![](http://oriwplcze.bkt.clouddn.com/505fca382c3e617cf411e0045fd53776.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/505fca382c3e617cf411e0045fd53776.png)
 
 
 # 施黑魔法的时机是什么？
@@ -169,6 +169,6 @@ git rebase -i HEAD^^^
 
 <div  align="center">    
 
-![微信公众号](http://oriwplcze.bkt.clouddn.com/qrcode_for_gh_e8f891ce77fb_258.jpg)
+![微信公众号](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/qrcode_for_gh_e8f891ce77fb_258.jpg)
 
 </div>

@@ -35,7 +35,7 @@ App Module > Library Module
 
 合并的规则:
 
-![](http://oriwplcze.bkt.clouddn.com/component_2.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/component_2.png)
 
 
 结合我们的情况，是值 A 合并值 B，会产生冲突错误，如下是我的亲身试法：
@@ -52,7 +52,7 @@ Execution failed for task ':app:processDebugManifest'.
 
 除了上面报错的方法，另外再推荐给大家一个方法，打开 App Module 的 AndroidManifest.xml 文件，选择下方 Merged Manifest 选项卡，可以看到预合并结果。
 
-![](http://oriwplcze.bkt.clouddn.com/component_3.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/component_3.png)
 
 
 以上我们就明白为什么不同的 Application 不能共存的原因。那还有其他方法去实现美好设想吗？
@@ -151,5 +151,5 @@ public class MyApplication extends Application {
 
 <center>
 <font color=gray>欢迎关注博主的微信公众号，快快加入哦，期待与你一起成长！</font>
-<img src="http://oriwplcze.bkt.clouddn.com/qrcode_130.png" width="130" height="130" />
+<img src="http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/qrcode_130.png" width="130" height="130" />
 </center>

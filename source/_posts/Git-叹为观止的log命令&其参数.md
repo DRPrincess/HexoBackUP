@@ -14,7 +14,7 @@ tags:
 
 官方文档上对它的描述是：
 
-![](http://oriwplcze.bkt.clouddn.com/ed89fe9d7adbbea2a2a8e46bec0e79db.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/ed89fe9d7adbbea2a2a8e46bec0e79db.png)
 
 `git log`的本质是展示提交信息。
 
@@ -100,7 +100,7 @@ git log --before=<date>
 git log --since="2018.03.12" --until="2018.03.18"
 ```
 
-![](http://oriwplcze.bkt.clouddn.com/2822a11f836646aca90c5646d48668d9.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/2822a11f836646aca90c5646d48668d9.png)
 
 
 ## Search-提交信息
@@ -114,7 +114,7 @@ git log --grep=<pattern>
 git log --grep='喜欢' --oneline
 
 ```
-![](http://oriwplcze.bkt.clouddn.com/4eb050fbb8ced1cac878dd4e6c9b68c8.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/4eb050fbb8ced1cac878dd4e6c9b68c8.png)
 
 ## Search-修改内容
 
@@ -132,7 +132,7 @@ git log --oneline -- 11.txt
 
 ```
 
-![](http://oriwplcze.bkt.clouddn.com/16f1a4be8828c0ad6bc232bccd45fa9a.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/16f1a4be8828c0ad6bc232bccd45fa9a.png)
 
 
 ### 修改内容
@@ -150,7 +150,7 @@ git log -G<regex>
 git log -S"喜欢你" --oneine
 ```
 
-![](http://oriwplcze.bkt.clouddn.com/a543b009f298e88d21aaf0e782010479.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/a543b009f298e88d21aaf0e782010479.png)
 
 ## Search-合并相关的提交 & 文件
 
@@ -182,7 +182,7 @@ git log --merge
 git log
 
 ```
-![git log](http://oriwplcze.bkt.clouddn.com/65a51c1532526d535bb6f70ae638d374.png)
+![git log](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/65a51c1532526d535bb6f70ae638d374.png)
 ## 一行情书版
 
 使用 --oneline 参数，only one line !只显示提交的 SHA1 值和提交信息，SHA1 还是缩短显示前几位。
@@ -193,7 +193,7 @@ git log --oneline
 
 ```
 
-![git log --oneline](http://oriwplcze.bkt.clouddn.com/3d17a2b90e034dfec01a8819a146b06c.png)
+![git log --oneline](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/3d17a2b90e034dfec01a8819a146b06c.png)
 
 
 ## 毫发毕现版
@@ -204,13 +204,13 @@ git log --oneline
 git log --stat
 
 ```
-![git log  -- stat](http://oriwplcze.bkt.clouddn.com/daf52822990898b8cb8e760b49fd4742.png)
+![git log  -- stat](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/daf52822990898b8cb8e760b49fd4742.png)
 
 ```
 git log -p
 
 ```
-![git log -p](http://oriwplcze.bkt.clouddn.com/0cb1a5277b74589afb427539d09023f8.png)
+![git log -p](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/0cb1a5277b74589afb427539d09023f8.png)
 
 
 
@@ -224,7 +224,7 @@ git log -p
 git shortlog
 
 ```
-![git shortlog](http://oriwplcze.bkt.clouddn.com/a3b52f009b3a2fa567d0b78fde970f35.png)
+![git shortlog](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/a3b52f009b3a2fa567d0b78fde970f35.png)
 
 ## 图文并茂版
 
@@ -238,7 +238,7 @@ git log --graph --oneline --decorate
 
 ```
 
-![git log --graph --oneline --decorate](http://oriwplcze.bkt.clouddn.com/0da129d012262c3fee320b1aeccb0593.png)
+![git log --graph --oneline --decorate](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/0da129d012262c3fee320b1aeccb0593.png)
 
 ## 最强推荐版
 
@@ -250,7 +250,7 @@ git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(
 ```
 
 
-![](http://oriwplcze.bkt.clouddn.com/cecbe1dbe030d2420a4ab34c13fb5af6.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/cecbe1dbe030d2420a4ab34c13fb5af6.png)
 
 
 效果比较炫酷，这个已经属于自定义格式了，git log 支持自定义样式的，有兴趣的娃子可以自己研究下。而且这个命令比较长，娃子们可以通过给这个命令设置别名解决：
@@ -274,6 +274,6 @@ git config --global alias.lg "log --graph --pretty=format:'%Cred%h%Creset -%C(ye
 
 <div  align="center">    
 
-![微信公众号](http://oriwplcze.bkt.clouddn.com/qrcode_for_gh_e8f891ce77fb_258.jpg)
+![微信公众号](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/qrcode_for_gh_e8f891ce77fb_258.jpg)
 
 </div>

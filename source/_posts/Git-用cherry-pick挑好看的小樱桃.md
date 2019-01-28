@@ -34,7 +34,7 @@ cherry-pick 的翻译是择优挑选，使用`git cherry-pick`命令，可以选
 4. 若无冲突，过程就已经完成了。如果有冲突，按正常冲突解决流程即可。
 
 
-![cherry-pick 示意图](http://oriwplcze.bkt.clouddn.com/9aa1f519d3cd1582fe2df23e1daec86d.png)
+![cherry-pick 示意图](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/9aa1f519d3cd1582fe2df23e1daec86d.png)
 
 
 
@@ -43,8 +43,8 @@ cherry-pick 的翻译是择优挑选，使用`git cherry-pick`命令，可以选
 
 从上面简单的小例子上看，我想，小伙伴们，都应该已经对 merge 和 cherry-pick 有了大概的区分，这里做下对比，让大家有个清晰明确的掌握，防止似是而非，以后误操作。
 
-![](http://oriwplcze.bkt.clouddn.com/2b21a3fbbfb2075a6bff00005864c0dd.png)
-![](http://oriwplcze.bkt.clouddn.com/84636ade7b19f14305ced1b0f2a2b6b7.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/2b21a3fbbfb2075a6bff00005864c0dd.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/84636ade7b19f14305ced1b0f2a2b6b7.png)
 
 `git merge ` ：将两个提交历史合并。   
 `git cherry-pick`：将提交对应的内容合并。
@@ -102,7 +102,7 @@ git commit -m "创建樱桃3号文件"
 
 以上，测试场景构建完毕。现在用 `git log develop` 查看 develop 的提交历史如下：
 
-![](http://oriwplcze.bkt.clouddn.com/1c0d9f7a0c51d14323f276aff30cee6e.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/1c0d9f7a0c51d14323f276aff30cee6e.png)
 
 现在，仔细瞅瞅，你最喜欢几号樱桃，喜欢哪个，就挑哪个。我喜欢3号，从上图看到3号的 SHA1 值是`9e2d49b7c6d868c4cac4c5198d6661837eca813b`,使用前几位就足够了。
 
@@ -114,17 +114,17 @@ git cherry-pick 9e2d49b
 
 ```
 
-![](http://oriwplcze.bkt.clouddn.com/a21997ec056754d93f5f4f19945931dd.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/a21997ec056754d93f5f4f19945931dd.png)
 
 挑选成功，通过 `ls` 命令，看到成功加入`樱桃3号.txt`。
 
-![](http://oriwplcze.bkt.clouddn.com/1711676addc7ab27b171966dcf5c5b83.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/1711676addc7ab27b171966dcf5c5b83.png)
 
 挑樱桃游戏成功！
 
 另外，需要说明的是，cherry-pick 到 master 的樱桃3号，事实上不是真的 3 号，是 3 号的复制品， 两者的 SHA1 值是不同的，由此可确认这是两个提交。
 
-![](http://oriwplcze.bkt.clouddn.com/227958ecf8d386c9a061939823a15b4d.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/227958ecf8d386c9a061939823a15b4d.png)
 
 
 # 了解更多的 cherry-pick
@@ -180,6 +180,6 @@ git cherry-pick --abort //停止本次操作
 
 <div  align="center">    
 
-![微信公众号](http://oriwplcze.bkt.clouddn.com/qrcode_for_gh_e8f891ce77fb_258.jpg)
+![微信公众号](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/qrcode_for_gh_e8f891ce77fb_258.jpg)
 
 </div>

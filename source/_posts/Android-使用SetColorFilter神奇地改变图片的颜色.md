@@ -17,17 +17,17 @@ tags:
 
 现在，有一个效果展示是这样的，选中某个车型时，显示选中的颜色，是主题色红色。
 
-![](http://oriwplcze.bkt.clouddn.com/646D48768CC5BAB2662C9E295FE92C2E.jpg)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/646D48768CC5BAB2662C9E295FE92C2E.jpg)
 
 
 现在，我们的产品和UI宝宝决定要把主题色改成蓝色，于是选中效果要像下面这样：
 
-![](http://oriwplcze.bkt.clouddn.com/2D2974E3BFC803C9392EAF0415A66538.jpg)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/2D2974E3BFC803C9392EAF0415A66538.jpg)
 
 
 看项目代码的时候，然后很惊讶的发现图片的原图，是这个样子的：
 
-![](http://oriwplcze.bkt.clouddn.com/e53dfe62f49a0ec9c0b712403b91c3b1.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/e53dfe62f49a0ec9c0b712403b91c3b1.png)
 
 
 
@@ -94,11 +94,11 @@ Android PorterDuff.Mode 便是提供了图片的各种混合模式，可以分�
 
 既然混合，两个图片，源图片和目标图片，如下：
 
-![](http://oriwplcze.bkt.clouddn.com/4c71c7f8b607af20690371e6c12cc0f7.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/4c71c7f8b607af20690371e6c12cc0f7.png)
 
 SRC_ATOP 混合模式效果如下图，只保留源图片和目标图片的相交部分，其他部分舍弃：
 
-![](http://oriwplcze.bkt.clouddn.com/c5f6c1538694ac1057eac8daa4d2109d.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/c5f6c1538694ac1057eac8daa4d2109d.png)
 
 
 按照上面的示例来对应，那么我们的源图就是蓝色，目标图片是小汽车图案。蓝色和小汽车图案的重合部分，只有线条，所以能达到改变颜色的效果。
@@ -119,6 +119,6 @@ SRC_ATOP 混合模式效果如下图，只保留源图片和目标图片的相�
 
 <div  align="center">    
 
-![微信公众号](http://oriwplcze.bkt.clouddn.com/qrcode_for_gh_e8f891ce77fb_258.jpg)
+![微信公众号](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/qrcode_for_gh_e8f891ce77fb_258.jpg)
 
 </div>

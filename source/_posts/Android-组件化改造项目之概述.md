@@ -15,7 +15,7 @@ tags:
 
 组件化这个词，我们应该在各个地方，通过各种渠道，看到过无数次，而且一般会给配上下面这张图，小机器人，绿油油的色彩，非常的鲜艳夺目有调性。
 
-![](http://oriwplcze.bkt.clouddn.com/module.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/module.png)
 
 
 组件化和插件化同属于模块化编程，只是两种不同的展现模式。两者的区别，只有一个：插件化支持动态增加和修改线上的模块，组件化只能对现有模块进行增加和删除。
@@ -60,7 +60,7 @@ tags:
 
 下面是我司项目组件化过程中的解耦的业务模块：
 
-![](http://oriwplcze.bkt.clouddn.com/component_1.jpeg)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/component_1.jpeg)
 
 Android 绿色小机器人坐成两排，十分乖巧可爱。
 
@@ -106,5 +106,5 @@ Android 绿色小机器人坐成两排，十分乖巧可爱。
 
 <center>
 <font color=gray>欢迎关注博主的微信公众号，快快加入哦，期待与你一起成长！</font>
-<img src="http://oriwplcze.bkt.clouddn.com/qrcode_130.png" width="130" height="130" />
+<img src="http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/qrcode_130.png" width="130" height="130" />
 </center>

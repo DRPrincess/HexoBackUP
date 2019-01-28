@@ -46,11 +46,11 @@ tags:
 
 一般情况下是这种
 
-![](http://oriwplcze.bkt.clouddn.com/2a0ba794301e3a0f9508f150ebe39a68.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/2a0ba794301e3a0f9508f150ebe39a68.png)
 
 和这种
 
-![](http://oriwplcze.bkt.clouddn.com/27ae9ec6648ac0d7fedafc9873abbaae.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/27ae9ec6648ac0d7fedafc9873abbaae.png)
 
 以及等等。
 
@@ -168,11 +168,11 @@ android:textCursorDrawable="@drawable/edit_cursor_color"
 
 默认的键盘的 enter 是换行键，如下：
 
-![](http://oriwplcze.bkt.clouddn.com/c4b90cf405894f77569cdd4cfd15ad35.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/c4b90cf405894f77569cdd4cfd15ad35.png)
 
 但是有的时候，产品需求会要求，键盘的 enter 键改为其他文字，最常见的是搜索，点击搜索后出发代码中设置的搜索逻辑。
 
-![](http://oriwplcze.bkt.clouddn.com/8249bebe4b0714390cca8ced2d04b7cf.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/8249bebe4b0714390cca8ced2d04b7cf.png)
 
 
 通过在设置 EditText 的 `imeOptions` 可以改变 enter 键的文案,要着重说明的是，因为将默认的换行键换为了搜索键，所以等于放弃了换行功能，所以需要通知设置 `android:singleLine="true"` 才能使    `android:imeOptions="actionSearch"
@@ -403,6 +403,6 @@ mEditText.setFilters(new InputFilter[]{new MoneyValueFilter().setDigits(3)});
 
 <div  align="center">    
 
-![微信公众号](http://oriwplcze.bkt.clouddn.com/qrcode_for_gh_e8f891ce77fb_258.jpg)
+![微信公众号](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/qrcode_for_gh_e8f891ce77fb_258.jpg)
 
 </div>

@@ -14,14 +14,14 @@ tags:
 
 最新在开发一个新的 APP ，自己手动写了版本更新，测试发现，覆盖安装的时候，在 Android 7.0 系统上出现解析包错误。
 
-![](http://oriwplcze.bkt.clouddn.com/dc88dc9d5f71ecbff76d988e82228397.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/dc88dc9d5f71ecbff76d988e82228397.png)
 
 
 
 报错信息：
 
 
-![](http://oriwplcze.bkt.clouddn.com/8285ee6fa3afa5ecf2e5fd5809127c03.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/8285ee6fa3afa5ecf2e5fd5809127c03.png)
 
 
 核心报错信息：
@@ -151,7 +151,7 @@ FileProvider 的使用方法网上有很多，这里不多说了，附上 Google
 
  这个是定义在 FileProvider 中的属性，作用是允许对 ContentProvider 通信的目标应用临时授权。
 
-![](http://oriwplcze.bkt.clouddn.com/e7cf3fc2a041720157312d412856b50b.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/e7cf3fc2a041720157312d412856b50b.png)
 
 这个属性默认是 false，但是要求必须设置为 true，否则直接报错 `java.lang.SecurityException: Provider must grant uri permissions`
 
@@ -262,17 +262,17 @@ Intent.FLAG_ACTIVITY_NEW_TASK 的含义是开启一个新的任务栈来装载�
 
 1.如果 SecondActivity 在 AndroidManifest.xml 没有设置 Task Affinity，创建的 SecondActivity 的栈和 MainActivity 的栈一样。
 
-![](http://oriwplcze.bkt.clouddn.com/3d684dfddf6c5c459e475cacb30e7a17.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/3d684dfddf6c5c459e475cacb30e7a17.png)
 
 
 
 2.如果 SecondActivity 在 AndroidManifest.xml 设置 Task Affinity 属性，SecondActivty 才会创建在一个新栈中。
 
-![](http://oriwplcze.bkt.clouddn.com/d45689d16d59c3c78a29db62c8ef11f7.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/d45689d16d59c3c78a29db62c8ef11f7.png)
 
 
 
-![](http://oriwplcze.bkt.clouddn.com/72d95bb6699504447915adc22a6ef178.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/72d95bb6699504447915adc22a6ef178.png)
 
 
 
@@ -292,6 +292,6 @@ Task Affinity 属性导致表现不同的原因是，当使用 singleTask 方式
 
 <div  align="center">    
 
-![微信公众号](http://oriwplcze.bkt.clouddn.com/qrcode_for_gh_e8f891ce77fb_258.jpg)
+![微信公众号](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/qrcode_for_gh_e8f891ce77fb_258.jpg)
 
 </div>

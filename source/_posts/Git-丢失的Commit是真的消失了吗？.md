@@ -23,15 +23,15 @@ git fsck --lost-found
 
 ```
 
-![](http://oriwplcze.bkt.clouddn.com/5c898b9623122b0ba7f559fe1c43ca1c.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/5c898b9623122b0ba7f559fe1c43ca1c.png)
 
 从结果截图中， 可以看到 dangling commit 的类型说明，以及该提交的 SHA1 值。
 
 但是，我们并不能从长达 40 位的 SHA1 值中看出这是个什么提交，所以需要通过 `git show <commit>`来查看提交的内容
 
-![](http://oriwplcze.bkt.clouddn.com/fe510b470e7e1c5a386f1882f4c60c3a.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/fe510b470e7e1c5a386f1882f4c60c3a.png)
 
-![](http://oriwplcze.bkt.clouddn.com/9991aa5794bdc6dca896e511ed68f893.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/9991aa5794bdc6dca896e511ed68f893.png)
 
 不过不是你要的提交，你就挨个多试试，如果刚好是你要恢复的提交，那么，恭喜你，拿到后面的 SHA1 值，就可以根据自己的需求操作了， checkout ,merge,rebase,reset 等命令供君挑选！
 
@@ -41,7 +41,7 @@ Git 的命令真的很丰富，平常使用的只是其中一部分，如果不�
 
 官方文档对它的介绍是验证数据库中对象的连通性和有效性。
 
-![](http://oriwplcze.bkt.clouddn.com/5d20877eef1bfc45789ab1cf8256c354.png)
+![](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/5d20877eef1bfc45789ab1cf8256c354.png)
 
 这个命令有很多的查询方法，各自对应不用的查询范围，我看了一下，需要对 Git 的原理有点了解的基础，这里我不就深究了，有兴趣的娃子自己去看 [git-fsck 官方文档](https://git-scm.com/docs/git-fsck)。
 
@@ -63,6 +63,6 @@ see you next blog~
 
 <div  align="center">    
 
-![微信公众号](http://oriwplcze.bkt.clouddn.com/qrcode_for_gh_e8f891ce77fb_258.jpg)
+![微信公众号](http://raw.githubusercontent.com/DRPrincess/BlogImages/master/qiniu/qrcode_for_gh_e8f891ce77fb_258.jpg)
 
 </div>
